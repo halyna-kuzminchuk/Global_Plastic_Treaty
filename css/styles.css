@@ -184,7 +184,7 @@
     background-image: url("/img/Tag\ handling.jpg");
     background-size: cover;
     width: 100%;
-    height: 900px;
+    height: 680px;
 }
 
 .filler_block_content_handling_hero_img p {
@@ -192,7 +192,8 @@
     font-size: 48px;
     text-align: center;
     color: var(--Midnight_blue);
-    padding-top: 400px;
+    padding-top: 350px;
+    text-transform: uppercase;
 }
 
 
@@ -347,14 +348,55 @@
     .footer_right>li:last-child{
         order: -1;
     }
+
+
+    /*Tag handling @media <769px----*/
+    .filler_block_content_handling_hero_img {
+        background-image: url("/img/Tag\ handling.jpg");
+        background-size:auto:
+        width: 100%;
+        height: 350px;
+    }
+    
+    .filler_block_content_handling_hero_img p {
+        font-size: 32px;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+
     
 
 
 }
+
+
 @media (width<400px){
    
     .main_button a{
         font-size: 16px;
         
     }
+
+
+
+
+
+
+/*Tag handling @media <400px----*/
+
+.filler_block_content_handling_hero_img {
+    background-image: url("/img/Tag\ handling.jpg");
+    background-size:auto:
+    width: 100%;
+    height: 265px;
+}
+
+.filler_block_content_handling_hero_img p {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
 }
