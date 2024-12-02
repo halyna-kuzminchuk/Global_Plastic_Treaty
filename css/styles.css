@@ -147,12 +147,14 @@
 .main_button:hover{
     border: 1px solid var(--Midnight_blue);
 }
+
+
 .main_button a{
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: var(--Font_Oswald);
-    padding: 10px 20px;
+    padding: 0 20px;
 }
 
 
