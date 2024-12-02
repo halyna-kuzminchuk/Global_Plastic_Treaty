@@ -132,6 +132,11 @@
     border-bottom: 3px solid var(--Light_mint_green);
 
 }
+.main_button a:hover{
+    border: none;
+    
+    
+}
   
 .menu_look li:last-child {
     border-right: 1px solid var(--Midnight_blue);
@@ -145,7 +150,9 @@
     border: none;
 }
 .main_button:hover{
-    border: 1px solid var(--Midnight_blue);
+    scale: 110%;
+    
+    
 }
 
 
