@@ -187,6 +187,14 @@
     height: 900px;
 }
 
+.filler_block_content_handling_hero_img p {
+    font-family: var(--Font_Oswald);
+    font-size: 48px;
+    text-align: center;
+    color: var(--Midnight_blue);
+    padding-top: 400px;
+}
+
 
 
 
