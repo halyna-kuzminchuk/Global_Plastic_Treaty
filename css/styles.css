@@ -171,6 +171,43 @@
 
 
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
+/* Hero section */
+
+.hero_f {
+    width: var(--width-full);
+    background-image: url(/img/Vi\ står\ sammen.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 80px;
+    }
+
+
+    .test {
+        color:red;
+    }
+
+
+.hero_container_f {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+}
+    
+.hero_text_f {
+   font-family: var(--Font_Oswald);
+   font-size: 48px;
+   grid-column: 1 / span 6;
+   grid-row: 1;
+   padding-top: 20px;
+   text-transform: uppercase;
+   padding-left: 10px
+}
+
 
 
 /* TAG HANDLING ---------------------------------------------------------------------------------------------------------- */
