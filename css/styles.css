@@ -171,6 +171,7 @@
 
 
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
+
 /* Hero section */
 
 .hero_f {
@@ -182,12 +183,6 @@
     height: 600px;
     margin-bottom: 80px;
     }
-
-
-    .test {
-        color:red;
-    }
-
 
 .hero_container_f {
     display: grid;
@@ -207,6 +202,8 @@
    text-transform: uppercase;
    padding-left: 10px
 }
+
+/* test test test again */
 
 
 
