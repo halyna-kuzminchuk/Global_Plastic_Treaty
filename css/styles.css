@@ -323,7 +323,7 @@ header{
     width:var(--width-12col);
     gap:var(--grid-gap);
     margin: auto;
-    height: 600px;
+    height: auto;
 }
   
 .hero-text-underskriv {
