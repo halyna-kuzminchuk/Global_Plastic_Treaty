@@ -275,6 +275,7 @@
     padding-top: 30px;
     margin-bottom: 80px;
     color:var(--Midnight_blue);
+
  }
 
 .hero-container-underskriv {
@@ -283,7 +284,7 @@
     grid-template-rows: auto auto auto;
     width:var(--width-12col);
     gap:var(--grid-gap);
-    margin: 0 auto;
+    margin: auto;
     height: 600px;
 }
   
@@ -351,10 +352,7 @@
     margin-top: 12px;
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-}
+
 .sign-box-h2 {
     text-wrap: wrap;
     font-size: 32px;
@@ -404,7 +402,135 @@ h2 {
     grid-column: 8 / span 4;
     margin-top:200px;
     grid-row: 1;
+    font-family: var(--Font_Oswald);
 }
+.brug-din-stemme-heading h2{
+    height: 80px;
+    background-color: var(--Midnight_blue);
+    color:var(--Cloud_white);
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 px;
+    width: var(--width-full);
+    margin: 20px auto ;
+    text-wrap: wrap;
+    font-family: var(--Font_Oswald);
+  
+}
+
+.brug-din-stemme {
+    height: fit-content;
+    width: var(--width-12col);
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 1fr 1fr;    
+    gap: var(--grid-gap);
+    margin: 20px auto 20px auto;
+  }
+
+.brug_din_stemme_content_block_image img {
+    height: 405px;
+    width: 595px;
+
+    background-size: cover;
+    background-position: center ;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  
+}
+.brug_din_stemme_content {
+    display: grid;
+       
+    gap: var(--grid-gap);
+    box-sizing: border-box;
+    width: 595px;
+  }
+
+.brug_din_stemme_content_block {
+    background-color: var(--Light_lavanda);
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px dark var(--Cloud_white);
+}
+.brug_din_stemme_content_block_text_top h5 {
+    font-size: 22px;
+    font-weight: 700; 
+    text-transform: uppercase;
+    margin: 0 0 10px 0; 
+    font-family: var(--Font_Oswald);
+    
+
+
+}
+.brug_din_stemme_content_block_text_top p {
+    font-size: 16;
+    font-family: 'font Q', sans-serif;
+
+}
+
+.brug_din_stemme_content_block_text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    color:var(--color_dark);
+
+
+}
+.brug_din_stemme_content_block_bottom_area {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    
+}
+.brug_don_stemme_content_block_bottom_area_right button {
+    background-color: var(--color_dark);
+    border: 1px solid var(--background-color-light);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+.brug_din_stemme_content_block_bottom_area_right button a {
+    color: var(--color-light);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+  
+}
+
+.underskriv_video_overskrift h2{
+    height: 80px;
+    background-color: var(--Midnight_blue);
+    color:var(--Cloud_white);
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 px;
+    width: var(--width-full);
+    margin: 20px auto ;
+    text-wrap: wrap;
+    font-family: var(--Font_Oswald);
+  
+}
+
+.underskriv_video_box {
+    width: var(--width-12col);
+    margin: 70px auto;
+}
+
 
 /* FOOTER----------------------------------------------------------------------------------------------------------------*/
 .footer{
