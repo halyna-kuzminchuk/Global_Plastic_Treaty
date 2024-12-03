@@ -46,7 +46,7 @@
     font-family: var(--Font_Oswald);
     height: auto;
     width: var(--width-full);
-    padding-bottom: 700px;
+    padding-bottom: 100px;
     background-color: var(--Cloud_white);
   }
 
@@ -168,20 +168,13 @@ header{
 }
 .menu_look a:hover::before {
     width: 100%;
-    /* border-bottom: 3px solid var(--Light_mint_green); */
+   
 
 }
-<<<<<<< Updated upstream
-.main_button a:hover{
-    border: none;
-    
-    
-}
+
 
 /* kw test for github - test 2 */
-=======
 
->>>>>>> Stashed changes
   
 
 .main_button{
@@ -466,6 +459,7 @@ h2 {
     justify-content:space-between;
     align-items: start;
     margin: 0 auto;
+    padding: 20px 10px;
     
 }
 .foot_container ul{
