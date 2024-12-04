@@ -333,7 +333,6 @@ h1{
     text-transform: uppercase;
     padding-left: 10px;
     align-items: center;
-    font-weight: 600;
     color: var(--Cloud_white);
 }
 
@@ -349,7 +348,7 @@ h1{
 
 .mail_section_container_left_f {
     grid-column: 1 / span 4;
-    height: 700px;
+    height: 500px;
     background-color: var(--Midnight_blue);
     display: flex;
     flex-direction: column;
@@ -359,22 +358,44 @@ h1{
 
 .mail_section_container_right_f {
     grid-column: 6 / span 7;
-    height: 700px;
+    height: 500px;
     background-color: var(--Midnight_blue);
+    border-radius: 5px;
+    padding: 34px;
 }
 
 .left_headline_f {
     color: var(--Cloud_white);
     font-family: var(--Font_Oswald);
     font-size: 24px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .left_text_f {
     color: var(--Cloud_white);
-    font-family: var(--Fond_Q);
+    font-family: "Quattrocento", serif;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 30px;   
+}
+
+.left_text_f p {
+    padding-bottom: 10px;
+}
+
+.right_headline_f {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.name_writing_box_f input {
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
 }
 
 
