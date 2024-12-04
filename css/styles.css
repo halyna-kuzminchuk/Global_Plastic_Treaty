@@ -322,7 +322,7 @@ h1{
     height: 680px;
 }
 
-.filler_block_content_handling_hero_img p {
+.filler_block_content_handling_hero_img p { /* Text på hero img */
     font-family: var(--Font_Oswald);
     font-size: 32px;
     text-align: center;
@@ -332,7 +332,7 @@ h1{
     font-weight: 600; /*makes it more bold */
 }
 
-.filler_block_content_handling{
+.filler_block_content_handling{ /*filler block mellem hero og footer*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
@@ -341,14 +341,14 @@ h1{
     background-color:var(--Cloud_white) ;
 }
 
-.filler_block_content_handling_filler_dark{
+.filler_block_content_handling_filler_dark{ /*mørk boks under hero img*/
     width: var(--width-12col);
     height: 80px;
     background-color: var(--Midnight_blue);
     margin-top: 60px;
 }
 
-.filler_block_content_handling_filler_dark p {
+.filler_block_content_handling_filler_dark p { /*tekst under hero img */
     color: var(--Cloud_white);
     font-family: var(--Font_Oswald);
     font-size: 32px;
