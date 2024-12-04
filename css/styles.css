@@ -356,6 +356,19 @@ h1{
 }
 
 
+.tag_handling_boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tag_handling_boxes1 txt-box {
+    background-color: #132A2C;
+}
+
+
+
+
 
 
 
