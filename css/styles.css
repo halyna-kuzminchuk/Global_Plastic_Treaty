@@ -18,7 +18,7 @@
     --Blue_grey:#A6AEC0;
     --Light_lavanda:#C6D4E9;
     --Light_mint_green:#D1E8C6;
-    --Bright_green:#048c45;
+    --Bright_green:#8ae35f;
     --Sutle_green:#03735F;
     
     /* Fonts    */
@@ -186,7 +186,7 @@ header{
     width: fit-content;
     height: fit-content;
     padding: 10px 30px ;
-    background-color: var(--Light_mint_green);
+    background-color: var(--Bright_green);
     border-radius: 5px;
     border: none;
     margin: 0 10px;
