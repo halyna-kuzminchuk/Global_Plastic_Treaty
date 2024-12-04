@@ -18,7 +18,7 @@
     --Blue_grey:#A6AEC0;
     --Light_lavanda:#C6D4E9;
     --Light_mint_green:#D1E8C6;
-    --Bright_green:#048c45;
+    --Bright_green:#8ae35f;
     --Sutle_green:#03735F;
     
     /* Fonts    */
@@ -186,7 +186,7 @@ header{
     width: fit-content;
     height: fit-content;
     padding: 10px 30px ;
-    background-color: var(--Light_mint_green);
+    background-color: var(--Bright_green);
     border-radius: 5px;
     border: none;
     margin: 0 10px;
@@ -320,16 +320,17 @@ h1{
     height: 680px;
 }
 
-.filler_block_content_handling_hero_img p {
+.filler_block_content_handling_hero_img p { /* Text på hero img */
     font-family: var(--Font_Oswald);
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
     color: var(--Midnight_blue);
     padding-top: 350px;
     text-transform: uppercase;
+    font-weight: 600; /*makes it more bold */
 }
 
-.filler_block_content_handling{
+.filler_block_content_handling{ /*filler block mellem hero og footer*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
@@ -338,19 +339,44 @@ h1{
     background-color:var(--Cloud_white) ;
 }
 
-.filler_block_content_handling_filler_dark{
+.filler_block_content_handling_filler_dark{ /*mørk boks under hero img*/
     width: var(--width-12col);
     height: 80px;
     background-color: var(--Midnight_blue);
     margin-top: 60px;
 }
 
-.filler_block_content_handling_filler_dark p {
+.filler_block_content_handling_filler_dark p { /*tekst under hero img */
     color: var(--Cloud_white);
     font-family: var(--Font_Oswald);
     font-size: 32px;
-    text-transform: uppercase;
+    text-transform: uppercase; /*writes the text in caps */
 }
+
+
+.tag_handling_boxes { /*overordnet box*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tag_handling_boxes1_txt_box { /*box til teksten*/
+    background-color: #132A2C;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+}
+
+.tag_handling_boxes1img { /*box til img*/
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+
+}
+
+
 
 
 
