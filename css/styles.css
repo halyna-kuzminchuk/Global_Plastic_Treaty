@@ -309,6 +309,8 @@ h1{
    color: var(--Midnight_blue);
 }
 
+/* Mail Section */
+
 .mail_section {
     width: var(--width-full);
     background-color: var(--Midnight_blue);
@@ -331,7 +333,52 @@ h1{
     text-transform: uppercase;
     padding-left: 10px;
     align-items: center;
+    font-weight: 600;
+    color: var(--Cloud_white);
 }
+
+.mail_section_container_f {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.mail_section_container_left_f {
+    grid-column: 1 / span 4;
+    height: 700px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    border-radius: 5px;
+}
+
+.mail_section_container_right_f {
+    grid-column: 6 / span 7;
+    height: 700px;
+    background-color: var(--Midnight_blue);
+}
+
+.left_headline_f {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+
+.left_text_f {
+    color: var(--Cloud_white);
+    font-family: var(--Fond_Q);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
 
 
 
