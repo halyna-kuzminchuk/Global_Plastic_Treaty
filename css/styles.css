@@ -34,7 +34,7 @@
     font-family: var(--Font_Oswald);
   }
 
-.body{
+body{
     font-family: var(--Font_Oswald);
     background-color: var(--Cloud_white);
     min-height: 100vh;
