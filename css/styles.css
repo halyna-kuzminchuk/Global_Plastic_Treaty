@@ -359,6 +359,31 @@ h1{
 }
 
 
+.tag_handling_boxes { /*overordnet box*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tag_handling_boxes1_txt_box { /*box til teksten*/
+    background-color: #132A2C;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+}
+
+.tag_handling_boxes1img { /*box til img*/
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+
+}
+
+
+
+
 
 
 
