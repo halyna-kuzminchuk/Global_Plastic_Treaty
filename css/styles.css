@@ -329,7 +329,7 @@ h1{
     color: var(--Midnight_blue);
     padding-top: 350px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 600; /*makes it more bold */
 }
 
 .filler_block_content_handling{
@@ -352,7 +352,7 @@ h1{
     color: var(--Cloud_white);
     font-family: var(--Font_Oswald);
     font-size: 32px;
-    text-transform: uppercase;
+    text-transform: uppercase; /*writes the text in caps */
 }
 
 
