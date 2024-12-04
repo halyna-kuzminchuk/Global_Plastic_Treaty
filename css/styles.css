@@ -84,6 +84,9 @@ header{
     max-height: 100px;
     margin: 0 auto;
 }
+.hidden{
+    display: none;
+}
 
 .logo img{
     width: 100px;
@@ -167,7 +170,7 @@ header{
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: var(--Light_mint_green);
+    background-color: var(--Bright_green);
     transition: width 0.3s ease;
 
 }
@@ -743,6 +746,10 @@ h1{
 
     /* Hidden navigation bar */
 
+    .hidden{
+        display: flex;
+    }
+
     .menu_container {        
         position: absolute;   
         top:100px;
@@ -837,6 +844,10 @@ h1{
     .navigation_bar:has(input:checked) > .menu_container{
         /* height: calc(100vh - 100px); */
         width: 100%;
+    }
+    .navigation_bar:has(input:checked) > .hidden {
+        display: none;
+        
     }
 
     /* Front page hero */
