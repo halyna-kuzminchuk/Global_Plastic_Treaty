@@ -324,11 +324,12 @@ h1{
 
 .filler_block_content_handling_hero_img p {
     font-family: var(--Font_Oswald);
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
     color: var(--Midnight_blue);
     padding-top: 350px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .filler_block_content_handling{
