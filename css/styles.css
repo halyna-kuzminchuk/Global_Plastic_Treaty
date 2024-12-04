@@ -18,7 +18,7 @@
     --Blue_grey:#A6AEC0;
     --Light_lavanda:#C6D4E9;
     --Light_mint_green:#D1E8C6;
-    --Bright_green:#8ae35f;
+    --Soft-orange:#F4A261;
     
     
     /* Fonts    */
@@ -170,7 +170,7 @@ header{
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: var(--Bright_green);
+    background-color: var(--Light_mint_green);
     transition: width 0.3s ease;
 
 }
@@ -189,7 +189,7 @@ header{
     width: fit-content;
     height: fit-content;
     padding: 10px 30px ;
-    background-color: var(--Bright_green);
+    background-color: var(--Soft-orange);
     border-radius: 5px;
     border: none;
     margin: 0 10px;
@@ -267,9 +267,66 @@ h1{
     font-weight: 500;
     color: var(--Midnight_blue);
 }
+
+/* Information block */
+
+.information_block{
+    width: var(--width-full);
+    height: auto;
+    margin: 50px auto 0 auto;
+    background-color: var(--Cloud_white);
+}
+.counter_container{
+    width: var(--width-full);
+    height: fit-content;
+    background-color: var(--Midnight_blue);
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.counter{
+    max-width:var(--width-12col);
+    height: fit-content;
+    background-color: var(--Midnight_blue);
+    display: flex;   
+    gap:20px;
+    padding: var(--padding-default);
+
+}
+.counter_sides li{
+    color: var(--Cloud_white);
+    font-family: var(--Fond_Q);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    list-style: none;
+    text-align: center;
+
+}
+
+
+.scale_green_box{
+    width: 680px;
+    height:50px;
+    background-color: var(--Cloud_white);
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.scale_white_box{
+    width: 600px;
+    height:50px;
+    background-color: var(--Light_mint_green);
+    border-radius: 20px;
+    align-self: flex-end;
+
+}
 .placeholder{
     height: 200px;
 }
+
 
 
 
@@ -758,9 +815,9 @@ h1{
 
 /* FOOTER----------------------------------------------------------------------------------------------------------------*/
 footer{
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
 
     height: auto;
     width: var(--width-full);
