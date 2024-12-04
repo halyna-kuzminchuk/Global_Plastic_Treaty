@@ -280,7 +280,7 @@ h1{
 
 .hero_f {
     width: var(--width-full);
-    background-image: url(/img/Vi\ står\ sammen.jpg);
+    background-image: url(/img/Vi\ staar\ sammen.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,9 +306,35 @@ h1{
    text-transform: uppercase;
    padding-left: 10px;
    font-weight: 600;
+   color: var(--Midnight_blue);
 }
 
-/* test test test onsdag mia */
+.mail_section {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.mail_section_headline_box {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    align-items: center;
+}
+
+
+
 
 
 
