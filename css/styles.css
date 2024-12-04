@@ -275,6 +275,7 @@ h1{
 
 
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
+
 /* Hero section */
 
 .hero_f {
@@ -287,16 +288,10 @@ h1{
     margin-bottom: 80px;
     }
 
-
-    .test {
-        color:red;
-    }
-
-
 .hero_container_f {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     height: 100%;
     width: var(--width-12col);
     margin: 0 auto 0 auto;
@@ -304,13 +299,16 @@ h1{
     
 .hero_text_f {
    font-family: var(--Font_Oswald);
-   font-size: 48px;
+   font-size: 32px;
    grid-column: 1 / span 6;
    grid-row: 1;
-   padding-top: 20px;
+   padding-top: 60px;
    text-transform: uppercase;
-   padding-left: 10px
+   padding-left: 10px;
+   font-weight: 600;
 }
+
+/* test test test onsdag */
 
 
 
