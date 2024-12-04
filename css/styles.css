@@ -758,11 +758,14 @@ h1{
 
 /* FOOTER----------------------------------------------------------------------------------------------------------------*/
 .footer{
-    
-    height: auto;
-    width: 100%;
-    background-color:var(--Midnight_blue);
+    position: fixed;
+    left: 0;
+    bottom: 0;
 
+    height: auto;
+    width: var(--width-full);
+    background-color:var(--Midnight_blue);
+    
 }
 .foot_container{
     max-width:var(--width-12col) ;
