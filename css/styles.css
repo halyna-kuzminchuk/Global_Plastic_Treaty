@@ -27,6 +27,7 @@
 }
 
     /* Reset CSS */
+
     * {
     margin:0;
     padding:0;
@@ -34,20 +35,22 @@
     font-family: var(--Font_Oswald);
   }
 
-.body{
+body{
     font-family: var(--Font_Oswald);
     background-color: var(--Cloud_white);
-    min-height: 100vh;
+    height: auto;
+    /* min-height: 100vh; */
     
 }
 
 
 .main_container{
-    
+    position: relative;
+       
     font-family: var(--Font_Oswald);
     height: auto;
     width: var(--width-full);
-    padding-bottom: 100px;
+    
     background-color: var(--Cloud_white);
     margin: 0 auto;
     
@@ -95,6 +98,8 @@ header{
     align-items: center;
     flex-shrink: 0;
     
+    border-radius:5px ;
+    
    }
 .logo img:hover{
     scale:120%
@@ -103,6 +108,7 @@ header{
 
 .mobile_look{ 
     display:none;
+   
    
 }
 
@@ -193,6 +199,7 @@ header{
     border-radius: 5px;
     border: none;
     margin: 0 10px;
+    
 }
 .main_button a{
     text-decoration: none;
@@ -215,7 +222,8 @@ header{
 /* FORSIDE ---------------------------------------------------------------------------------------------------------------*/
 .front_page_hero{
   
-    max-width:var(--width-full);
+    width:var(--width-full);
+    max-width: 100vw;
     height: 720px;
     background-image: url(/img/Turtle_hero_image.jpg);
     background-position: bottom center;
@@ -226,7 +234,9 @@ header{
 }
 
 .front_page_hero_box{
-    max-width: var(--width-12col);
+    width: var(--width-12col);
+    max-width: 100%;
+
     height: inherit;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -264,8 +274,10 @@ h1{
 .fp_hero_text_right p{
     font-family: var(--Fond_Q);
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--Midnight_blue);
+    align-content: center;
+    
 }
 
 /* Information block */
@@ -282,17 +294,22 @@ h1{
     background-color: var(--Midnight_blue);
     padding: 0 10px;
     display: flex;
-    justify-content: center;
-
+    
+   
 
 }
 .counter{
-    max-width:var(--width-12col);
+    width:var(--width-12col);
+    max-width: 100%;
     height: fit-content;
     background-color: var(--Midnight_blue);
     display: flex;   
-    gap:20px;
-    padding: var(--padding-default);
+    justify-content:center;
+    gap: 20px;
+    padding: var(--padding-default); 
+    flex-grow: 1;
+    
+
 
 }
 .counter_sides li{
@@ -309,20 +326,83 @@ h1{
 
 .scale_green_box{
     width: 680px;
+    max-width: 60%;     
     height:50px;
     background-color: var(--Cloud_white);
     border-radius: 20px;
     align-self: flex-end;
+    transition: rotate 0.3s ease;
+   
 }
 
 .scale_white_box{
     width: 600px;
+    max-width: 80%;
+    
     height:50px;
     background-color: var(--Light_mint_green);
     border-radius: 20px;
     align-self: flex-end;
 
 }
+
+/* A row of cards with text  */
+.learn_more{
+    margin-top: 25px;
+    display: flex;
+
+    flex-grow: 1;
+    flex-basis: 0;    
+    gap: 30px;
+    max-width: var(--width-12col);
+  
+    justify-self: center;
+
+}
+.box{
+    height: 300px;
+    max-height: 60vh;
+    border-radius: 5px;
+    /* border: solid 1px var(--Midnight_blue); */
+    background-color: var(--Cloud_white);
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
+    /* effect of flow */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.learn_more p{
+    font-family: var(--Fond_Q);
+    font-size: 24px;
+    color: var(--Midnight_blue);
+    padding: 20px;
+}
+
+.trans_button{
+    background-color: var(--Cloud_white);
+    border: solid 1px var(--Blue_grey);
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
+    
+    
+}
+.trans_button a{
+    color: var(--Blue_grey);
+}
+
+.box:hover{
+    background-color: var(--Light_mint_green);
+}
+
+.box:hover >.trans_button {
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px var(--Light_mint_green); 
+    
+}
+
+
 .placeholder{
     height: 200px;
 }
@@ -861,7 +941,7 @@ h1{
 /* FOOTER----------------------------------------------------------------------------------------------------------------*/
 
 footer{
-    
+
     /* position: fixed;
     left: 0;
     bottom: 0; */
@@ -1076,9 +1156,11 @@ footer{
     /* Front page hero */
     .front_page_hero{
       position: relative;
-      width: 100%;
+      max-width: 100%;
       height: 100%;
       top: 130px;
+      
+      ;
       
     }
     .front_page_hero_box{
@@ -1089,10 +1171,53 @@ footer{
         grid-template-rows: 130px 130px;
         gap: var(--grid-gap);
         width: 100%;
-        height: 100%;
+        
 
 
     }
+    .fp_hero_text_right p{
+        
+        
+        
+    }
+    .information_block{
+        position:inherit;
+        top: 130px; 
+       }
+    .counter{
+        height: auto;
+        width:100vw;
+        min-width: 300px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+              
+        
+        
+    }
+    .scale_green_box{
+        position: relative;
+       align-self: self-start;
+       rotate: -90deg;       
+       max-width: 200px;
+       right: 70px;
+        
+
+    }
+    .counter_sides{
+       align-self: center;
+       display: flex;
+       flex-direction: column;
+       align-items:center;
+       
+       flex-grow: 1;
+       
+    }
+    .counter_sides li{
+        text-align: start;
+        
+    }
+
     .fp_hero_text_left{
         grid-column: 1/span 3;
         grid-row: 1;
