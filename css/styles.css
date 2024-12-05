@@ -754,11 +754,11 @@ h1{
         flex-direction: column;
         justify-content: center;
         /* align-items: start; */
-        gap: 20px;        
+        gap: 20px;
         z-index: 1;
         overflow: hidden;
         transition: width 0.4s ease-in-out;
-                
+        
     }
 
    
