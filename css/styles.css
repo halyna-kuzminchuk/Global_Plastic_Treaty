@@ -718,8 +718,8 @@ max-width: 1200px;
   
   
   .tag_handling_boxes_button a {
-    background-color: #000000;
-    color:var(--background-color-light);
+    background-color:transparent;
+    color: var(--Cloud_white);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
