@@ -651,6 +651,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    
   }
   
   .tag_handling_boxes_1 {
@@ -659,11 +660,11 @@ h1{
     font-size: 16px;
     height: 380px;
     width: 50%;
-    background-color: #ebebeb;
+    background-color:var(--Midnight_blue); /*farven på box med tekst */
     text-shadow: none;
   }
   
-  .in_the_kitchen_1 img {
+  .tag_handling_boxes_1 img {
     height: 100%;
   
   }
@@ -673,11 +674,11 @@ h1{
   
   }
   
-  .in_the_kitchen_1_button {
+  .tag_handling_boxes_button {
    margin: 10px 0 0 0
   }
   
-  .in_the_kitchen_1_button button{
+  .tag_handling_boxes_button button{
     border: 1px solid var(--background-color-light);
     background-color: var(--bacground-color-dark-bg);
     border-radius:5px;
@@ -688,7 +689,7 @@ h1{
   }
   
   
-  .in_the_kitchen_1_button a {
+  .tag_handling_boxes_button a {
     background-color: #000000;
     color:var(--background-color-light);
     text-decoration: none;
@@ -701,17 +702,17 @@ h1{
     color: var(--bacground-color-dark-bg);
   }
   
-  .text_box_2 {
+  .text_box_2 { /*lille overskrift */
     text-transform: uppercase;
-    color: #BF5B23;
+    color: var(--Cloud_white);
     padding: 10px 0 10px 0;
     font-size: 22px;
     font-weight: 700;
   }
   
-  .text_box_3 {
+  .text_box_3 { /*lang tekst */
     text-transform: initial;
-    color: #000000;
+    color: var(--Cloud_white);
     font-weight: lighter;
   }
 
