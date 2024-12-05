@@ -46,7 +46,7 @@ body{
 
 .main_container{
     position: relative;
-       
+        
     font-family: var(--Font_Oswald);
     height: auto;
     width: var(--width-full);
@@ -64,7 +64,7 @@ header{
     width: var(--width-full);
     max-height: 100px;
     background-color:var(--Cloud_white);
-    z-index: 2;
+    z-index: 1;
     
 }
 .logo {     
@@ -199,6 +199,7 @@ header{
     border-radius: 5px;
     border: none;
     margin: 0 10px;
+    transition: slale 0.5s ease;
     
 }
 .main_button a{
@@ -270,15 +271,24 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     color: var(--Midnight_blue);
-    line-height: 1.2;
+    line-height: 72px;
+    /* background-color: #fffef94a;
+    backdrop-filter: blur(2px); */
+    /* padding-left: 10px; */
+    height: fit-content;
+    border-radius: 5px;
 }
 .fp_hero_text_right p{
     font-family: var(--Fond_Q);
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--Midnight_blue);
     align-content: center;
-    
+    background-color: #fffef94a;
+    backdrop-filter: blur(2px);
+    padding-left: 10px;
+    height: fit-content;
+    border-radius: 5px;    
 }
 
 /* Information block */
@@ -349,22 +359,30 @@ h1{
 
 /* A row of cards with text  */
 .learn_more{
-    margin-top: 25px;
-    display: flex;
+display: flex;
+max-width: var(--width-12col);
+flex-grow: 1;
+flex-basis: 0;  
+justify-self: center;
+}
 
-    flex-grow: 1;
-    flex-basis: 0;    
-    gap: 30px;
-    max-width: var(--width-12col);
+.hider{
+margin-top: 50px;
+display: flex;
+padding: 0 10px;
   
-    justify-self: center;
+gap: 30px;
+max-width: 1200px;
+
 
 }
+
 .box{
+    position: relative;
     height: 300px;
     max-height: 60vh;
     border-radius: 5px;
-    /* border: solid 1px var(--Midnight_blue); */
+    border: solid 1px var(--Blue_grey);
     background-color: var(--Cloud_white);
     box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
     /* effect of flow */
@@ -373,6 +391,7 @@ h1{
     gap: 30px;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.5s ease;
     
     
 
@@ -388,6 +407,7 @@ h1{
     background-color: var(--Cloud_white);
     border: solid 1px var(--Blue_grey);
     box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
+    transition: box-shadow 0.5s ease;
     
     
 }
@@ -403,7 +423,9 @@ h1{
     box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px var(--Light_mint_green); 
     
 }
-
+.swiper_container{
+    display: none;
+}
 
 .placeholder{
     height: 200px;
@@ -415,10 +437,7 @@ h1{
 
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
 
-.main_container_f { /*kan slettet til sidst */
-    height: 3000px;
-    background-color: var(--Cloud_white);
-}
+
 
 /* Hero section */
 
@@ -429,7 +448,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     }
 
 .hero_container_f {
@@ -448,7 +467,6 @@ h1{
    grid-row: 1;
    padding-top: 60px;
    text-transform: uppercase;
-   padding-left: 10px;
    font-weight: 600;
    color: var(--Midnight_blue);
 }
@@ -457,6 +475,15 @@ h1{
 
 .mail_section {
     width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+}
+
+.mail_section_headline_box {
+    width: var(--width-full);
     background-color: var(--Midnight_blue);
     background-position: center center;
     background-repeat: no-repeat;
@@ -464,7 +491,7 @@ h1{
     height: 80px;
 }
 
-.mail_section_headline_box {
+.mail_section_headline_text {
     display: grid;
     grid-template-columns: repeat(12, 1 fr);
     grid-template-rows: auto;
@@ -475,7 +502,6 @@ h1{
     font-family: var(--Font_Oswald);
     font-size: 28px;
     text-transform: uppercase;
-    padding-left: 10px;
     align-items: center;
     color: var(--Cloud_white);
 }
@@ -491,12 +517,12 @@ h1{
 }
 
 .mail_section_container_left_f {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     height: 500px;
     background-color: var(--Midnight_blue);
     display: flex;
     flex-direction: column;
-    padding: 34px;
+    padding: 50px;
     border-radius: 5px;
 }
 
@@ -505,7 +531,7 @@ h1{
     height: 500px;
     background-color: var(--Midnight_blue);
     border-radius: 5px;
-    padding: 34px;
+    padding: 50px;
 }
 
 .left_headline_f {
@@ -539,6 +565,7 @@ h1{
     color: var(--Cloud_white);
     margin-bottom: 10px;
     font-family: var(--Fond_Q);
+    text-transform: uppercase;
 }
 
 .name_writing_box_f input {
@@ -552,6 +579,7 @@ h1{
     color: var(--Cloud_white);
     margin-bottom: 10px;
     font-family: var(--Fond_Q);
+    text-transform: uppercase;
 }
 
 .email_writing_box_f input {
@@ -565,6 +593,7 @@ h1{
     width: 200px;
     padding: 10px 20px;
     font-size: 16px;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -575,19 +604,225 @@ h1{
 }
 
 .button_f button:hover {
-    background-color: var(--Bright_green);
+    background-color: var(--Soft-orange);
+    color: var(--Midnight_blue);
+    scale: 100%;
+}
+
+/* Instagram Section */
+
+.instagram_section {
+    width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    background-color: var(--Cloud_white);
+    
+}
+
+.instagram_section_headline_box {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.instgram_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.instagram_section_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.instagram_section_container_left {
+    grid-column: 1 / span 6;
+    height: 800px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.instagram_section_container_right {
+    grid-column: 8 / span 5;
+    height: 800px;
+    background-image: url(/img/Instagram\ opslag.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 34px;
+    border: 1px solid var(--Midnight_blue)
+}
+
+.insta_left_headline {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.insta_left_text {
+    color: var(--Cloud_white);
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 30px;  
+    margin-bottom: 80px;
+}
+
+.insta_left_text p {
+    padding-bottom: 10px;
+}
+
+.button_insta_f button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color var(--Midnight_blue);
+    text-transform: uppercase;
+    background-color: var(--Light_mint_green);
+    margin-left: 1.5px;
+}
+
+.button_insta_f button:hover {
+    background-color: var(--Soft-orange);
+    color: var(--Midnight_blue);
+    scale: 100%;
+}
+
+/* Event Section */
+
+.event_section {
+    width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+}
+
+.event_section_headline_box {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.event_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.event_section_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.event_section_container_left {
+    grid-column: 1 / span 4;
+    height: 600px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.event_section_container_right {
+    grid-column: 6 / span 7;
+    height: 600px;
+    background-image: url(/img/samle\ skrald\ event.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 34px;
+}
+
+.event_left_headline {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.event_section_container_left ul {
+    color: var(--Cloud_white);
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 45px;  
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.button_event_f button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color var(--Midnight_blue);
+    text-transform: uppercase;
+    background-color: var(--Light_mint_green);
+    margin-left: 1.5px;
+}
+
+.button_event_f button:hover {
+    background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
 }
 
 
 
-
-
-
-
-
-
+    
 
 
 /* TAG HANDLING ---------------------------------------------------------------------------------------------------------- */
@@ -595,7 +830,7 @@ h1{
 
 
 .filler_block_content_handling_hero_img {
-    background-image: url("/img/Tag\ handling.jpg");
+    background-image: url("/img/Tag\ handling\ hero\ img.jpg");
     background-size: cover;
     width: 100%;
     height: 680px;
@@ -611,10 +846,11 @@ h1{
     font-weight: 600; /*makes it more bold */
 }
 
-.filler_block_content_handling{ /*filler block mellem hero og footer*/
+
+.filler_block_content_handling{ /* block mellem hero og footer*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    width: 100%;
+    width: var(--width-12col);
     margin: 0 auto 0 auto;
     height: 3200px;
     background-color:var(--Cloud_white) ;
@@ -635,27 +871,86 @@ h1{
 }
 
 
-.tag_handling_boxes { /*overordnet box*/
+/*Start på de 6 kasser/ hjælp fra Recipe code */
+
+.tag_handling_boxes {
+    height: fit-content;
+    color:var(--color-white);
+    width: var(--width-12col);
+    margin:70px auto 0 auto;
+    text-shadow: 1px 1px 1px var(--primary-color);
+    padding-bottom: 200px;
+  }
+  
+  
+  .tag_handling_boxes_boxes {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-}
-
-.tag_handling_boxes1_txt_box { /*box til teksten*/
-    background-color: #132A2C;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
+    
+  }
+  
+  .tag_handling_boxes_1 {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    font-size: 16px;
+    height: 380px;
     width: 50%;
-}
-
-.tag_handling_boxes1img { /*box til img*/
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    width: 50%;
-
-}
+    background-color:var(--Midnight_blue); /*farven på box med tekst */
+    text-shadow: none;
+  }
+  
+  .tag_handling_boxes_1 img {
+    height: 100%;
+  
+  }
+  
+  .txt-box {
+    padding:80px
+  
+  }
+  
+  .tag_handling_boxes_button {
+   margin: 10px 0 0 0
+  }
+  
+  .tag_handling_boxes_button button{
+    border: 1px solid var(--background-color-light);
+    background-color: var(--bacground-color-dark-bg);
+    border-radius:5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor:pointer;
+    padding:10px 30px 10px 30px;
+  }
+  
+  
+  .tag_handling_boxes_button a {
+    background-color:transparent;
+    color: var(--Cloud_white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .text_box_1 {
+    font-weight: bold;
+    color: var(--bacground-color-dark-bg);
+  }
+  
+  .text_box_2 { /*lille overskrift */
+    text-transform: uppercase;
+    color: var(--Cloud_white);
+    padding: 10px 0 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .text_box_3 { /*lang tekst */
+    text-transform: initial;
+    color: var(--Cloud_white);
+    font-weight: lighter;
+  }
 
 
 
@@ -683,7 +978,7 @@ h1{
     color:var(--Midnight_blue);
 
  }
- 
+ /* 
 .underskriv-overlay {
     position: absolute;
     top: 0;
@@ -695,7 +990,7 @@ h1{
     z-index: 1;
 
 }
-
+ */
 .hero-container-underskriv {
     display:grid;
     grid-template-columns: repeat(12, 1fr);
@@ -712,11 +1007,10 @@ h1{
     grid-column: 7/ span 8;
     margin:100px auto auto 20px;
     grid-row: 1;
-    z-index: 2;
 }
 
 .hero-text-underskriv-glass-container {
-    height: 300px;
+    height: fit-content;
     width: 500px;
     padding: auto;
     border-radius: 5px;
@@ -769,7 +1063,6 @@ h1{
     text-align: center;
     width: 400px;
     height: auto;
-    z-index: 2;
     border-radius: 5px;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(53, 53, 52, 0.7);
     transition: all 0.3s ease;
@@ -1183,7 +1476,7 @@ footer{
         justify-content: center;
         /* align-items: start; */
         gap: 20px;
-        z-index: 1;
+        z-index: 3;
         overflow: hidden;
         transition: width 0.4s ease-in-out;
         
@@ -1292,14 +1585,14 @@ footer{
 
 
     }
-    .fp_hero_text_right p{
+   
         
         
-        
-    }
+    
     .information_block{
         position:inherit;
         top: 130px; 
+       
        }
     .counter{
         height: auto;
@@ -1350,6 +1643,121 @@ footer{
     .fp_hero_text_right p{
         font-size: 20px;
     }
+
+    /* Creaating a swiper */
+
+    .hider{
+        display: none;}
+
+.swiper_container{
+    margin-top:25px ;
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cloud_white);
+    overflow-x: hidden;
+    height: 110vh;
+    transition: display 0.5s ease;
+        
+    }
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    margin-bottom: 100px; 
+    
+    
+}
+.learn_more_swiper{
+    position: relative;
+    height: 80vh;
+    width: 320px;
+    margin-bottom: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+
+}
+.learn_more_swiper label{
+    position: absolute;
+    width: 280px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.5s ease;
+
+
+}
+
+.swiper input {
+    display: none;
+}
+
+
+
+
+
+
+#Box1:checked~.learn_more_swiper #slide3,
+#Box2:checked~.learn_more_swiper #slide1,
+#Box3:checked~.learn_more_swiper #slide2{
+    transform: translate3d(-150px, 0px, -200px);
+}
+
+#Box1:checked~.learn_more_swiper #slide1,
+#Box2:checked~.learn_more_swiper #slide2,
+#Box3:checked~.learn_more_swiper #slide3{
+    transform: translate3d(150px, 0px, -200px);
+}
+
+#Box1:checked~.learn_more_swiper #slide2,
+#Box2:checked~.learn_more_swiper #slide3,
+#Box3:checked~.learn_more_swiper #slide1{
+    
+    transform: translate3d(0 , 0, 0);
+    
+}
+
+
+/* Fællesskabsside phone version */
+
+    .hero_f {
+        width: var(--width-full);
+    }
+
+    .mail_section {
+        width: var(--width-full);
+    }
+
+    .mail_section_headline_box {
+        width: var(--width-full);
+    }
+
+    .mail_section_container_f {
+        width: var(--width-full);
+    }
+
+    .mail_section_container_left_f {
+        grid-row: 1;
+        width: var(--width-full);
+    }
+
+    .mail_section_container_right_f {
+        grid-row: 2;
+        width: var(--width-full);
+    }
+
+
+
 
    
  /*     
