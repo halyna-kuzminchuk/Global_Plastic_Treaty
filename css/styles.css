@@ -427,11 +427,6 @@ max-width: 1200px;
     display: none;
 }
 
-
-
-
-
-
 .placeholder{
     height: 200px;
 }
@@ -472,7 +467,6 @@ max-width: 1200px;
    grid-row: 1;
    padding-top: 60px;
    text-transform: uppercase;
-   padding-left: 10px;
    font-weight: 600;
    color: var(--Midnight_blue);
 }
@@ -829,20 +823,6 @@ max-width: 1200px;
 
 
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* TAG HANDLING ---------------------------------------------------------------------------------------------------------- */
@@ -1633,6 +1613,35 @@ footer{
     transform: translate3d(0 , 0, 0);
     
 }
+
+
+/* Fællesskabsside phone version */
+
+    .hero_f {
+        width: var(--width-full);
+    }
+
+    .mail_section {
+        width: var(--width-full);
+    }
+
+    .mail_section_headline_box {
+        width: var(--width-full);
+    }
+
+    .mail_section_container_f {
+        width: var(--width-full);
+    }
+
+    .mail_section_container_left_f {
+        grid-row: 1;
+        width: var(--width-full);
+    }
+
+    .mail_section_container_right_f {
+        grid-row: 2;
+        width: var(--width-full);
+    }
 
 
 
