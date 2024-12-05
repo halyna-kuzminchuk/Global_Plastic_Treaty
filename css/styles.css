@@ -276,10 +276,7 @@ h1{
 
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
 
-.main_container_f { /*kan slettet til sidst */
-    height: 3000px;
-    background-color: var(--Cloud_white);
-}
+
 
 /* Hero section */
 
@@ -318,6 +315,15 @@ h1{
 
 .mail_section {
     width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    
+}
+
+.mail_section_headline_box {
+    width: var(--width-full);
     background-color: var(--Midnight_blue);
     background-position: center center;
     background-repeat: no-repeat;
@@ -325,7 +331,7 @@ h1{
     height: 80px;
 }
 
-.mail_section_headline_box {
+.mail_section_headline_text {
     display: grid;
     grid-template-columns: repeat(12, 1 fr);
     grid-template-rows: auto;
@@ -336,7 +342,6 @@ h1{
     font-family: var(--Font_Oswald);
     font-size: 28px;
     text-transform: uppercase;
-    padding-left: 10px;
     align-items: center;
     color: var(--Cloud_white);
 }
@@ -400,6 +405,7 @@ h1{
     color: var(--Cloud_white);
     margin-bottom: 10px;
     font-family: var(--Fond_Q);
+    text-transform: uppercase;
 }
 
 .name_writing_box_f input {
@@ -413,6 +419,7 @@ h1{
     color: var(--Cloud_white);
     margin-bottom: 10px;
     font-family: var(--Fond_Q);
+    text-transform: uppercase;
 }
 
 .email_writing_box_f input {
@@ -440,6 +447,97 @@ h1{
     color: var(--Midnight_blue);
     scale: 100%;
 }
+
+/* Instagram Section */
+
+.instagram_section {
+    width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    background-color: var(--Cloud_white);
+    
+}
+
+.instagram_section_headline_box {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.instgram_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.instagram_section_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.instagram_section_container_left {
+    grid-column: 1 / span 6;
+    height: 600px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    border-radius: 5px;
+}
+
+.instagram_section_container_right {
+    grid-column: 8 / span 5;
+    height: 600px;
+    background-color: var(--Midnight_blue);
+    border-radius: 5px;
+    padding: 34px;
+}
+
+.insta_left_headline {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.insta_left_text {
+    color: var(--Cloud_white);
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 30px;  
+}
+
+.insta_left_text p {
+    padding-bottom: 10px;
+}
+
+
+    
+
+
+
+
+
 
 
 
