@@ -610,10 +610,11 @@ h1{
     font-weight: 600; /*makes it more bold */
 }
 
-.filler_block_content_handling{ /*filler block mellem hero og footer*/
+
+.filler_block_content_handling{ /* block mellem hero og footer*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    width: 100%;
+    width: var(--width-12col);
     margin: 0 auto 0 auto;
     height: 3200px;
     background-color:var(--Cloud_white) ;
@@ -634,27 +635,85 @@ h1{
 }
 
 
-.tag_handling_boxes { /*overordnet box*/
+/*Start på de 6 kasser/ hjælp fra Recipe code */
+
+.tag_handling_boxes {
+    height: fit-content;
+    color:var(--color-white);
+    width: var(--width-12col);
+    margin:70px auto 0 auto;
+    text-shadow: 1px 1px 1px var(--primary-color);
+    padding-bottom: 200px;
+  }
+  
+  
+  .tag_handling_boxes_boxes {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-}
-
-.tag_handling_boxes1_txt_box { /*box til teksten*/
-    background-color: #132A2C;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
+  }
+  
+  .tag_handling_boxes_1 {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    font-size: 16px;
+    height: 380px;
     width: 50%;
-}
-
-.tag_handling_boxes1img { /*box til img*/
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    width: 50%;
-
-}
+    background-color: #ebebeb;
+    text-shadow: none;
+  }
+  
+  .in_the_kitchen_1 img {
+    height: 100%;
+  
+  }
+  
+  .txt-box {
+    padding:80px
+  
+  }
+  
+  .in_the_kitchen_1_button {
+   margin: 10px 0 0 0
+  }
+  
+  .in_the_kitchen_1_button button{
+    border: 1px solid var(--background-color-light);
+    background-color: var(--bacground-color-dark-bg);
+    border-radius:5px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor:pointer;
+    padding:10px 30px 10px 30px;
+  }
+  
+  
+  .in_the_kitchen_1_button a {
+    background-color: #000000;
+    color:var(--background-color-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .text_box_1 {
+    font-weight: bold;
+    color: var(--bacground-color-dark-bg);
+  }
+  
+  .text_box_2 {
+    text-transform: uppercase;
+    color: #BF5B23;
+    padding: 10px 0 10px 0;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .text_box_3 {
+    text-transform: initial;
+    color: #000000;
+    font-weight: lighter;
+  }
 
 
 
