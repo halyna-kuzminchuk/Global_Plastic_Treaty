@@ -270,6 +270,7 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     color: var(--Midnight_blue);
+    line-height: 1.2;
 }
 .fp_hero_text_right p{
     font-family: var(--Fond_Q);
@@ -669,19 +670,31 @@ h1{
 
 /* SKRIV UNDER ----------------------------------------------------------------------------------------------------------- */
 
+
 .hero-container-underskriv-img {
-    background-image: url('https://picsum.photos/1920/800');
+    background-image: url(/img/plastic_in_hand.png);
     grid-column: 8 span 5;
-    height:auto;
-    min-height:600px;
+    height: 720px;;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding-top: 30px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     color:var(--Midnight_blue);
 
  }
+ 
+.underskriv-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 820px;
+    background-color: rgba(149, 204, 166, 0.4); 
+    pointer-events: none;  
+    z-index: 1;
+
+}
 
 .hero-container-underskriv {
     display:grid;
@@ -691,50 +704,99 @@ h1{
     gap:var(--grid-gap);
     margin: auto;
     height: auto;
+   
+    
 }
   
-.hero-text-underskriv {
-    grid-column: 6/ span 6;
-    margin:20px auto auto 20px;
+.hero-text-underskriv-glass-container {
+    grid-column: 7/ span 8;
+    margin:100px auto auto 20px;
     grid-row: 1;
+    z-index: 2;
 }
+
+.hero-text-underskriv-glass-container {
+    height: 300px;
+    width: 500px;
+    padding: auto;
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur (20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.536);
+    border-left: 1px solid rgba(245, 240, 240, 0.616);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.089);
+    text-align: right; 
+    transition: box-shadow 0.3s ease;
+ 
+}
+.hero-text-underskriv-glass-container:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+  }
 .underskriv-big-header {
-    font-size:32px;
-    font-weight: 700;
-    text-transform: uppercase;
+    color: var(--Midnight_blue);
+    font-size: 40px;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 10px;
+}
+.hero-text-underskriv-glass-container p {
+    color: var(--Midnight_blue);
+    font-size: 40px;
     text-wrap: nowrap;
     text-transform: uppercase;
+    margin-top: 50px;
+    font-weight: bold;
+    
 
 }
-  
+.underskriv_highlight {
+    color: var(--Soft-orange);
+    text-shadow: 2px 2px 2px var(--Midnight_blue);
+}
+.underskriv_highlight:hover {
+    scale: 110%;
+}
+
+
 .sign-box {
-    margin: 30px ;
-    background-color: var(--Light_lavanda);
+    grid-column: 1/ span 6;
+    margin: 30px auto auto 70px ;
+    background-color: var(--Cloud_white);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 400px;
     height: auto;
-}
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(53, 53, 52, 0.7);
+    transition: all 0.3s ease;
+  }
+  .sign-box:hover {
+    box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.1), -12px -12px 25px rgba(110, 109, 108, 0.7);
+  }
+
 .timeline {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: 20px;
+    
 }
 
 .circle {
     width: 20px;
     height: 20px;
-    background-color: var(--Light_mint_green);
+    background-color: var(--Blue_grey);
     border-radius: 50%;
     color: var(--Cloud_white);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     position: relative;
 }
@@ -742,7 +804,7 @@ h1{
 .line {
     width: 100px;
     height: 2px;
-    background-color: var(--Light_mint_green);
+    background-color: var(--Blue_grey);
 }
 
 .timeline .circle:first-child {
@@ -771,6 +833,7 @@ h1{
     text-align: start;
     margin-left: 20px ;
     margin-bottom: 20px;
+    color: var(--Midnight_blue);
 }
 
 .signature-area input {
@@ -780,23 +843,24 @@ h1{
     width: 300px;
 }
 
-
-.buttons button {
+.buttons_underskriv button {
+    width: 200px;
     padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color var(--Midnight_blue);
     text-transform: uppercase;
-    background-color: var(--Light_mint_green);
-}
+    font-weight: 700;
+    background-color: var(--Soft-orange);
+    margin: 10px;
 
-.buttons button:hover {
-    background-color: var(--Midnight_blue);
-    color: var(--Cloud_white);
-    scale: 100%;
+}
+.buttons_underskriv button:hover {
+    background-color: var(--Soft-orange);
+    color: var(--Midnight_blue);
+    scale: 110%;
 }
 .privatlivs-text {
     font-size: 12px;
@@ -811,7 +875,7 @@ h1{
     grid-row: 1;
     font-family: var(--Font_Oswald);
 }
-.brug-din-stemme-heading h2{
+.brug-din-stemme-header h2{
     height: 80px;
     background-color: var(--Midnight_blue);
     color:var(--Cloud_white);
@@ -819,15 +883,18 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     display:flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 0 0 0 px;
     width: var(--width-full);
-    margin: 20px auto ;
-    text-wrap: wrap;
+    margin: 20px auto;
     font-family: var(--Font_Oswald);
-  
+    
 }
+.brug-din-stemme-divider-heading  {
+    width: 100%;
+    padding: auto 70px;
+}
+
 
 .brug-din-stemme {
     height: fit-content;
@@ -836,35 +903,61 @@ h1{
     grid-template-columns: 1fr 1fr;  
     grid-template-rows: 1fr 1fr;    
     gap: var(--grid-gap);
-    margin: 20px auto 20px auto;
+    margin: 40px auto 40px auto;
   }
 
-.brug_din_stemme_content_block_image img {
+.brug_din_stemme_content_image img {
     height: 405px;
     width: 595px;
-
     background-size: cover;
     background-position: center ;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
+
+.brug_din_stemme_content_image img:hover {
+  transform: rotateY(180deg);
+}
+
+.brug_din_stemme_content_image img .front,
+.brug_din_stemme_content_image img .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.brug_din_stemme_content_image img .front {
+  background-color: #9b59b6;
+}
+
+.brug_din_stemme_content_image img .back {
+  background-color: #f39c12;
+  transform: rotateY(180deg);
+}
+
 .brug_din_stemme_content {
-    display: grid;
-       
+    display: grid; 
     gap: var(--grid-gap);
     box-sizing: border-box;
     width: 595px;
-  }
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+ 
 
-.brug_din_stemme_content_block {
-    background-color: var(--Light_lavanda);
+.brug_din_stemme_content_block_box {
+    background-color: var(--Cloud_white);
     position: relative;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 2px dark var(--Cloud_white);
+
 }
+
 .brug_din_stemme_content_block_text_top h5 {
     font-size: 22px;
     font-weight: 700; 
@@ -874,12 +967,12 @@ h1{
     
 
 
-}
+}/* 
 .brug_din_stemme_content_block_text_top p {
-    font-size: 16;
+    font-size: 12;
     font-family: 'font Q', sans-serif;
 
-}
+}/*  */
 
 .brug_din_stemme_content_block_text {
     padding: 20px;
@@ -887,35 +980,53 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     flex:1;
-    color:var(--color_dark);
+    color:var(--Midnight_blue);
 
 
 }
-.brug_din_stemme_content_block_bottom_area {
+
+
+
+.brug_din_stemme_content_block_text_bottom {
+    margin: 20px;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.trans_button_u {
+    background-color: var(--Cloud_white);
+    border: solid 1px var(--Blue_grey);
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
+    margin: 20px;
+    
+
+    
     
 }
-.brug_don_stemme_content_block_bottom_area_right button {
-    background-color: var(--color_dark);
-    border: 1px solid var(--background-color-light);
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
-  
-.brug_din_stemme_content_block_bottom_area_right button a {
-    color: var(--color-light);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 12px;
-  
+.trans_button_u a{
+    color: var(--Blue_grey);
 }
 
-.underskriv_video_overskrift h2{
+.brug_din_stemme_content_block_box:hover{
+    background-color: var(--Light_mint_green);
+}
+
+.box:hover >.trans_button {
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px var(--Light_mint_green); 
+    
+}
+
+
+.placeholder{
+    height: 200px;
+}
+
+
+ 
+  
+.video-container-header h2{
     height: 80px;
     background-color: var(--Midnight_blue);
     color:var(--Cloud_white);
@@ -923,20 +1034,25 @@ h1{
     font-weight: 700;
     text-transform: uppercase;
     display:flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 0 0 0 px;
     width: var(--width-full);
-    margin: 20px auto ;
-    text-wrap: wrap;
+    margin: 20px auto;
     font-family: var(--Font_Oswald);
-  
+    box-shadow: 2px 2px 2px dark var(--Midnight_blue);;
+    
 }
 
 .underskriv_video_box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: var(--width-12col);
-    margin: 70px auto;
+    margin: 40px auto;
+    border-radius: 5px;
+ 
 }
+
 
 
 /* FOOTER----------------------------------------------------------------------------------------------------------------*/
