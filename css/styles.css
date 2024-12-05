@@ -18,8 +18,8 @@
     --Blue_grey:#A6AEC0;
     --Light_lavanda:#C6D4E9;
     --Light_mint_green:#D1E8C6;
-    --Bright_green:#048c45;
-    --Sutle_green:#03735F;
+    --Soft-orange:#F4A261;
+    
     
     /* Fonts    */
     --Font_Oswald:"Oswald", serif;
@@ -83,6 +83,9 @@ header{
     max-width: var(--width-12col);
     max-height: 100px;
     margin: 0 auto;
+}
+.hidden{
+    display: none;
 }
 
 .logo img{
@@ -186,7 +189,7 @@ header{
     width: fit-content;
     height: fit-content;
     padding: 10px 30px ;
-    background-color: var(--Light_mint_green);
+    background-color: var(--Soft-orange);
     border-radius: 5px;
     border: none;
     margin: 0 10px;
@@ -264,6 +267,62 @@ h1{
     font-weight: 500;
     color: var(--Midnight_blue);
 }
+
+/* Information block */
+
+.information_block{
+    width: var(--width-full);
+    height: auto;
+    margin: 50px auto 0 auto;
+    background-color: var(--Cloud_white);
+}
+.counter_container{
+    width: var(--width-full);
+    height: fit-content;
+    background-color: var(--Midnight_blue);
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.counter{
+    max-width:var(--width-12col);
+    height: fit-content;
+    background-color: var(--Midnight_blue);
+    display: flex;   
+    gap:20px;
+    padding: var(--padding-default);
+
+}
+.counter_sides li{
+    color: var(--Cloud_white);
+    font-family: var(--Fond_Q);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    list-style: none;
+    text-align: center;
+
+}
+
+
+.scale_green_box{
+    width: 680px;
+    height:50px;
+    background-color: var(--Cloud_white);
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.scale_white_box{
+    width: 600px;
+    height:50px;
+    background-color: var(--Light_mint_green);
+    border-radius: 20px;
+    align-self: flex-end;
+
+}
 .placeholder{
     height: 200px;
 }
@@ -271,12 +330,19 @@ h1{
 
 
 
+
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
+
+.main_container_f { /*kan slettet til sidst */
+    height: 3000px;
+    background-color: var(--Cloud_white);
+}
+
 /* Hero section */
 
 .hero_f {
     width: var(--width-full);
-    background-image: url(/img/Vi\ står\ sammen.jpg);
+    background-image: url(/img/Vi\ staar\ sammen.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,16 +350,10 @@ h1{
     margin-bottom: 80px;
     }
 
-
-    .test {
-        color:red;
-    }
-
-
 .hero_container_f {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto;
     height: 100%;
     width: var(--width-12col);
     margin: 0 auto 0 auto;
@@ -301,13 +361,150 @@ h1{
     
 .hero_text_f {
    font-family: var(--Font_Oswald);
-   font-size: 48px;
+   font-size: 32px;
    grid-column: 1 / span 6;
    grid-row: 1;
-   padding-top: 20px;
+   padding-top: 60px;
    text-transform: uppercase;
-   padding-left: 10px
+   padding-left: 10px;
+   font-weight: 600;
+   color: var(--Midnight_blue);
 }
+
+/* Mail Section */
+
+.mail_section {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.mail_section_headline_box {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.mail_section_container_f {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.mail_section_container_left_f {
+    grid-column: 1 / span 4;
+    height: 500px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    border-radius: 5px;
+}
+
+.mail_section_container_right_f {
+    grid-column: 7 / span 6;
+    height: 500px;
+    background-color: var(--Midnight_blue);
+    border-radius: 5px;
+    padding: 34px;
+}
+
+.left_headline_f {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.left_text_f {
+    color: var(--Cloud_white);
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 30px;   
+}
+
+.left_text_f p {
+    padding-bottom: 10px;
+}
+
+.right_headline_f {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.full_name_f {
+    color: var(--Cloud_white);
+    margin-bottom: 10px;
+    font-family: var(--Fond_Q);
+}
+
+.name_writing_box_f input {
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.email_f {
+    color: var(--Cloud_white);
+    margin-bottom: 10px;
+    font-family: var(--Fond_Q);
+}
+
+.email_writing_box_f input {
+    border-radius: 5px;
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.button_f button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color var(--Midnight_blue);
+    text-transform: uppercase;
+    background-color: var(--Light_mint_green);
+    margin-left: 1.5px;
+}
+
+.button_f button:hover {
+    background-color: var(--Bright_green);
+    color: var(--Midnight_blue);
+    scale: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -322,16 +519,17 @@ h1{
     height: 680px;
 }
 
-.filler_block_content_handling_hero_img p {
+.filler_block_content_handling_hero_img p { /* Text på hero img */
     font-family: var(--Font_Oswald);
-    font-size: 48px;
+    font-size: 32px;
     text-align: center;
     color: var(--Midnight_blue);
     padding-top: 350px;
     text-transform: uppercase;
+    font-weight: 600; /*makes it more bold */
 }
 
-.filler_block_content_handling{
+.filler_block_content_handling{ /*filler block mellem hero og footer*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
@@ -340,19 +538,44 @@ h1{
     background-color:var(--Cloud_white) ;
 }
 
-.filler_block_content_handling_filler_dark{
+.filler_block_content_handling_filler_dark{ /*mørk boks under hero img*/
     width: var(--width-12col);
     height: 80px;
     background-color: var(--Midnight_blue);
     margin-top: 60px;
 }
 
-.filler_block_content_handling_filler_dark p {
+.filler_block_content_handling_filler_dark p { /*tekst under hero img */
     color: var(--Cloud_white);
     font-family: var(--Font_Oswald);
     font-size: 32px;
-    text-transform: uppercase;
+    text-transform: uppercase; /*writes the text in caps */
 }
+
+
+.tag_handling_boxes { /*overordnet box*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tag_handling_boxes1_txt_box { /*box til teksten*/
+    background-color: #132A2C;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+}
+
+.tag_handling_boxes1img { /*box til img*/
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 50%;
+
+}
+
+
 
 
 
@@ -636,8 +859,12 @@ h1{
 
 
 /* FOOTER----------------------------------------------------------------------------------------------------------------*/
-.footer{
+
+footer{
     
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
     height: auto;
     width: 100%;
     background-color:var(--Midnight_blue);
@@ -738,9 +965,13 @@ h1{
 
 
 
-@media (width<769px){ 
+@media (width<769px){  
 
     /* Hidden navigation bar */
+
+    .hidden{
+        display: flex;
+    }
 
     .menu_container {        
         position: absolute;   
@@ -837,6 +1068,10 @@ h1{
         /* height: calc(100vh - 100px); */
         width: 100%;
     }
+    .navigation_bar:has(input:checked) > .hidden {
+        display: none;
+        
+    }
 
     /* Front page hero */
     .front_page_hero{
@@ -875,7 +1110,7 @@ h1{
     }
 
    
-/*     
+ /*     
     Footer */
 
     .footer_left p{
