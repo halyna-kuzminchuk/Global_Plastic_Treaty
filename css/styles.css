@@ -1806,11 +1806,14 @@ footer{
 
     /* end Tag handling ---*/ 
     
-
+/* start underskriv side @media width<769px */
     
-
+    .hero-text-underskriv-glass-container {
+        display: none;
+    }
 
 }
+/* slut underskriv side @media width<769pz */
 
 
 @media (width<415px){
@@ -1844,5 +1847,13 @@ footer{
 
 /* end Tag handling ---*/ 
 
-
+/* start underskriv side @media width<769px */
+.sign-box {
+    width: 50%;
+    font-size: 12px;
+}
+.underskriv-big-header {
+    font-size: x-small;   
+}
+/* slut underskriv side @media width<769pz */
 }
