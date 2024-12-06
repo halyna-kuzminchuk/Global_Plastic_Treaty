@@ -385,7 +385,7 @@ max-width: 1200px;
     border-radius: 5px;
     border: solid 1px var(--Blue_grey);
     background-color: var(--Cloud_white);
-    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px #FFFFFA; 
     /* effect of flow */
     display: flex;
     flex-direction: column;
@@ -407,7 +407,7 @@ max-width: 1200px;
 .trans_button{
     background-color: var(--Cloud_white);
     border: solid 1px var(--Blue_grey);
-    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
+    box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px#FFFFFA; 
     transition: box-shadow 0.5s ease;
     
     
@@ -450,6 +450,14 @@ max-width: 1200px;
 
 }
 
+.box span{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: transparent;
+    z-index: 5;
+    transition: color 0.5s ease;
+}
 
 .fp_images_text{
           
@@ -494,8 +502,6 @@ max-width: 1200px;
     
 
 }
-
-
 
 .fp_image2{
     position: absolute;
@@ -1755,7 +1761,7 @@ footer{
         display: none;}
 
 .swiper_container{
-    margin-top:25px ;
+    margin-top:50px ;
   
     
     display: flex;
@@ -1763,7 +1769,7 @@ footer{
     align-items: center;
     background-color: var(--Cloud_white);
     overflow-x: hidden;
-    height: 110vh;
+    height:100%;
     transition: display 0.5s ease;
         
     }
@@ -1772,7 +1778,7 @@ footer{
     width: 100%;
     height: 100%;
     max-width: 400px;
-    max-height: 90vh;
+    height:100% ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1784,7 +1790,7 @@ footer{
 }
 .learn_more_swiper{
     position: relative;
-    height: 80vh;
+    height: 50vh;
     width: 320px;
     margin-bottom: 20px;
     perspective: 1000px;
@@ -1794,6 +1800,7 @@ footer{
 }
 .learn_more_swiper label{
     position: absolute;
+    max-height: 60vh;
     width: 280px;
     left: 0;
     right: 0;
@@ -1804,8 +1811,25 @@ footer{
 }
 
 .swiper input {
-    display: none;
+      appearance: none;}
+
+
+.box svg{
+    position: absolute;
+    z-index: 5;
+    right:10px;
+    top:10px;    
+    fill: var(--Blue_grey);
+    width: 25px;
+    height: 25px;
+    stroke: var(--Blue_grey);
+    
+    
+    
 }
+
+
+
 
 
 #Box1:checked~.learn_more_swiper #slide3,
@@ -1828,25 +1852,6 @@ footer{
     
 }
 
-#Img1:checked~.learn_more_swiper #slide_img3,
-#Img2:checked~.learn_more_swiper #slide_img1,
-#Img3:checked~.learn_more_swiper #slide_img2{
-    transform: translate3d(-150px, 0px, -200px);
-}
-
-#Img1:checked~.learn_more_swiper #slide_img1,
-#Img2:checked~.learn_more_swiper #slide_img2,
-#Img3:checked~.learn_more_swiper #slide_img3{
-    transform: translate3d(150px, 0px, -200px);
-}
-
-#Img1:checked~.learn_more_swiper #slide_img2,
-#Img2:checked~.learn_more_swiper #slide_img3,
-#Img3:checked~.learn_more_swiper #slide_img1{
-    
-    transform: translate3d(0 , 0, 0);
-    
-}
 
 /* Replacing hover effect that revealed text */
 
@@ -1874,30 +1879,17 @@ footer{
 }
 /* 
 Responsive solution for images */
-.second_slider{
-    padding: 10px;
-    display: flex;}
-
-   
-.slider_wrapper{
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-    height: 110vh;
-    
-}
-.slider{
+.images .hider{
     display: flex;
-    
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    border-radius: 5px;
-
+    flex-wrap: wrap;
 }
-.slider .box{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
+
+.box span{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: var(--Cloud_white);
+    z-index: 5;
 }
 
 
