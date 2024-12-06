@@ -38,14 +38,20 @@
 body{
     font-family: var(--Font_Oswald);
     background-color: var(--Cloud_white);
-    height: auto;
+    height: 100%;
     /* min-height: 100vh; */
     
 }
 
+main{
+    width: var(--width-full);
+    background-color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    margin-bottom: 50px;
+}
 
 .main_container{
-    position: relative;
+    /* position: relative; */
         
     font-family: var(--Font_Oswald);
     height: auto;
@@ -196,6 +202,10 @@ header{
     height: fit-content;
     padding: 10px 30px ;
     background-color: var(--Soft-orange);
+
+    /* I added this to make the button pop out, we can delete */
+
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset; 
     border-radius: 5px;
     border: none;
     margin: 0 10px;
@@ -295,7 +305,7 @@ h1{
 
 .information_block{
     width: var(--width-full);
-    height: auto;
+    height: 100%;
     margin: 50px auto 0 auto;
     background-color: var(--Cloud_white);
 }
@@ -548,6 +558,91 @@ max-width: 1200px;
 .second_slider{
     display: none;
 }
+
+.between{
+    display: flex;
+    width: var(--width-full);
+    height: fit-content;
+    margin: 50px auto;
+    background-color: var(--Cloud_white);
+    justify-content: center;
+    align-items: center;
+}
+.fp_video{
+    position: relative;
+    
+    margin:0;
+    width: var(--width-full);
+   
+    height: fit-content;
+}
+
+.fp_video video{
+   
+    width: var(--width-full);
+   
+    margin: 0;
+    object-fit: cover ;
+    max-height: 680px;;
+    
+
+
+
+}
+.video_frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.video_text{
+    max-width: var(--width-12col-);
+    padding: 20px 0;
+    height: 80%;
+    position: absolute;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr) ;
+    gap: 10px;  
+   
+    
+}
+
+.video_text h4{
+    
+    grid-column: 1/span 3;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+    
+    padding: 10px;
+    font-family: var(--Font_Oswald);
+    font-size: 32px;
+    color: var(--Cloud_white);
+    text-align: center;
+    background-color:#132a2c3f;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+.video_text p{
+    grid-column: 1/span 3;
+    grid-row: 2;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+   
+    padding: 10px;
+    font-family: var(--Fond_Q);
+    font-size: 24px;
+    color: var(--Cloud_white);
+    text-align: center;
+    background-color:#132a2c3f;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+    
+
+
 
 
 .placeholder{
@@ -1478,12 +1573,14 @@ footer{
     /* position: fixed;
     left: 0;
     bottom: 0; */
-    height: auto;
+    height: 100%;
     width: 100%;
     background-color:var(--Midnight_blue);
+    margin-top: 50px;
 
 }
 .foot_container{
+    height: 100%;
     max-width:var(--width-12col) ;
     background-color: var(--Midnight_blue);
     display: flex;
@@ -1693,7 +1790,7 @@ footer{
       height: 100%;
       top: 130px;
       
-      ;
+      
       
     }
     .front_page_hero_box{
@@ -1704,6 +1801,8 @@ footer{
         grid-template-rows: 130px 130px;
         gap: var(--grid-gap);
         width: 100%;
+        height: 100%;
+        margin-bottom: 130px;
         
 
 
@@ -1713,8 +1812,8 @@ footer{
         
     
     .information_block{
-        position:inherit;
-        top: 130px; 
+        
+        
        
        }
     .counter{
@@ -2077,6 +2176,13 @@ Responsive solution for images */
         padding: 10px;
              
         
+    }
+
+    .video_text p{
+        display: none;
+    }
+    .video_text h4{
+        grid-row: 2 /span 3;
     }
 
 
