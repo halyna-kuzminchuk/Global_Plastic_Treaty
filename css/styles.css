@@ -566,7 +566,7 @@ max-width: 1200px;
     background-size: cover;
     height: 600px;
     margin-bottom: 100px;
-    }
+}
 
 .hero_container_f {
     display: grid;
@@ -596,7 +596,6 @@ max-width: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px;
-    
 }
 
 .mail_section_headline_box {
@@ -1391,11 +1390,7 @@ max-width: 1200px;
     justify-content: space-between;
     flex:1;
     color:var(--Midnight_blue);
-
-
 }
-
-
 
 .brug_din_stemme_content_block_text_bottom {
     margin: 20px;
@@ -1410,11 +1405,8 @@ max-width: 1200px;
     border: solid 1px var(--Blue_grey);
     box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px white; 
     margin: 20px;
-    
-
-    
-    
 }
+
 .trans_button_u a{
     color: var(--Blue_grey);
 }
@@ -1425,17 +1417,13 @@ max-width: 1200px;
 
 .box:hover >.trans_button {
     box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px var(--Light_mint_green); 
-    
 }
 
 
 .placeholder{
     height: 200px;
 }
-
-
  
-  
 .video-container-header h2{
     height: 80px;
     background-color: var(--Midnight_blue);
@@ -1914,7 +1902,7 @@ Responsive solution for images */
 
 
 
-/* Fællesskabsside phone version */
+/* Fællesskabsside phone version ------------------------------*/
 
     /* hero and mail section */
 
@@ -1955,20 +1943,30 @@ Responsive solution for images */
         width: var(--width-full);
         margin-bottom: 20px;
         height:fit-content;
+        border-radius: 0%;
     }
 
     .mail_section_container_right_f {
         grid-column: 1 / span 12;
         grid-row: 2;
         width: var(--width-full);
+        border-radius: 0;
     }
 
     .name_writing_box_f input {
         width: 300px;
+        height: 50px;
     }
 
     .email_writing_box_f input {
         width: 300px;
+        height: 50px;
+    }
+
+    .button_f button {
+        width: 130px;
+        height: 50px;
+        font-size: 20px;
     }
 
     /* Instagram Section */
@@ -1983,6 +1981,12 @@ Responsive solution for images */
         display: grid;
     }
 
+    @media (width<490px) {
+    .instagram_section_headline_box {
+        height: 100px;
+    }  
+    }
+   
     .instagram_section_headline_text {
         width: var(--width-full);
         grid-column: 1 / span 3;
@@ -1999,31 +2003,71 @@ Responsive solution for images */
         width: var(--width-full);
         margin-bottom: 20px;
         height:fit-content;
+        border-radius: 0%;
     }
 
     .instagram_section_container_right {
-        grid-column: 1 / span 6;
+        grid-column: 1 / span 12;
         grid-row: 2;
+        width: 400px;
+        height: 650px;
+        justify-self: center;
+    }
+
+    .button_insta_f button {
+        width: 130px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Event Section */
+
+    .event_section {
         width: var(--width-full);
     }
 
+    .event_section_headline_box {
+        grid-column: 1 / span 12;
+        width: var(--width-full);
+    }
 
+    .event_section_headline_text {
+        width: var(--width-full);
+        grid-column: 1 / span 3;
+        padding-left: 10px;
+    }
+
+    .event_section_container {
+        width: var(--width-full);
+    }
+
+    .event_section_container_left {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        width: var(--width-full);
+        margin-bottom: 20px;
+        height:fit-content;
+        border-radius: 0%;
+    }
+
+    .event_section_container_right {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+        border-radius: 0%;
+    }
+
+    .button_event_f button {
+        width: 130px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Faallesskabsside done ----------------------------*/ 
 
     
 
 
-    
-
-        
-
-
-
-
-
-
-   
- /*     
-    Footer */
+ /* Footer */
 
     .footer_left p{
         display: none;
