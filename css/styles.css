@@ -433,18 +433,19 @@ max-width: 1200px;
 .images .box{
     background-color: var(--Midnight_blue);
     position: relative;
+    border: none;
     
     
 
 }
 #turner_1, #turner_2, #turner_3{
-   position:absolute;
+   /* position:absolute;
    top:0;
     left:0;
     width: 100%;
     height: 100%;
     z-index: 2;
-    cursor: pointer;
+    cursor: pointer; */
     appearance: none;   
 
 }
@@ -500,7 +501,7 @@ max-width: 1200px;
     position: absolute;
     
      
-    background-image: url(/img/Smoke_plants.jpg);
+    background-image: url(/img/Birds_smoke.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -529,15 +530,6 @@ max-width: 1200px;
 }
 
 
-#turner_1:checked~.fp_image1{
-    opacity: 0%;
-}
-#turner_2:checked~.fp_image2{
-    opacity: 0%;
-}
-#turner_3:checked~.fp_image3{
-    opacity: 0%;
-}
 
 .fp_image1:hover{opacity: 0%;}
 
@@ -545,6 +537,10 @@ max-width: 1200px;
 
 .fp_image3:hover{
     opacity: 0%;
+}
+
+.second_slider{
+    display: none;
 }
 
 
@@ -558,10 +554,7 @@ max-width: 1200px;
 
 /* FÆLLESSKABSSIDE ------------------------------------------------------------------------------------------------------ */
 
-.main_container_f { /*kan slettet til sidst */
-    height: 3000px;
-    background-color: var(--Cloud_white);
-}
+
 
 /* Hero section */
 
@@ -572,7 +565,7 @@ max-width: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     }
 
 .hero_container_f {
@@ -591,7 +584,6 @@ max-width: 1200px;
    grid-row: 1;
    padding-top: 60px;
    text-transform: uppercase;
-   padding-left: 10px;
    font-weight: 600;
    color: var(--Midnight_blue);
 }
@@ -600,6 +592,15 @@ max-width: 1200px;
 
 .mail_section {
     width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+}
+
+.mail_section_headline_box {
+    width: var(--width-full);
     background-color: var(--Midnight_blue);
     background-position: center center;
     background-repeat: no-repeat;
@@ -607,7 +608,7 @@ max-width: 1200px;
     height: 80px;
 }
 
-.mail_section_headline_box {
+.mail_section_headline_text {
     display: grid;
     grid-template-columns: repeat(12, 1 fr);
     grid-template-rows: auto;
@@ -618,7 +619,6 @@ max-width: 1200px;
     font-family: var(--Font_Oswald);
     font-size: 28px;
     text-transform: uppercase;
-    padding-left: 10px;
     align-items: center;
     color: var(--Cloud_white);
 }
@@ -634,12 +634,12 @@ max-width: 1200px;
 }
 
 .mail_section_container_left_f {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     height: 500px;
     background-color: var(--Midnight_blue);
     display: flex;
     flex-direction: column;
-    padding: 34px;
+    padding: 50px;
     border-radius: 5px;
 }
 
@@ -648,7 +648,7 @@ max-width: 1200px;
     height: 500px;
     background-color: var(--Midnight_blue);
     border-radius: 5px;
-    padding: 34px;
+    padding: 50px;
 }
 
 .left_headline_f {
@@ -682,6 +682,7 @@ max-width: 1200px;
     color: var(--Cloud_white);
     margin-bottom: 10px;
     font-family: var(--Fond_Q);
+    text-transform: uppercase;
 }
 
 .name_writing_box_f input {
@@ -695,6 +696,7 @@ max-width: 1200px;
     color: var(--Cloud_white);
     margin-bottom: 10px;
     font-family: var(--Fond_Q);
+    text-transform: uppercase;
 }
 
 .email_writing_box_f input {
@@ -708,6 +710,7 @@ max-width: 1200px;
     width: 200px;
     padding: 10px 20px;
     font-size: 16px;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -718,19 +721,225 @@ max-width: 1200px;
 }
 
 .button_f button:hover {
-    background-color: var(--Bright_green);
+    background-color: var(--Soft-orange);
+    color: var(--Midnight_blue);
+    scale: 100%;
+}
+
+/* Instagram Section */
+
+.instagram_section {
+    width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    background-color: var(--Cloud_white);
+    
+}
+
+.instagram_section_headline_box {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.instgram_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.instagram_section_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.instagram_section_container_left {
+    grid-column: 1 / span 6;
+    height: 800px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.instagram_section_container_right {
+    grid-column: 8 / span 5;
+    height: 800px;
+    background-image: url(/img/Instagram\ opslag.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 34px;
+    border: 1px solid var(--Midnight_blue)
+}
+
+.insta_left_headline {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.insta_left_text {
+    color: var(--Cloud_white);
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 30px;  
+    margin-bottom: 80px;
+}
+
+.insta_left_text p {
+    padding-bottom: 10px;
+}
+
+.button_insta_f button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color var(--Midnight_blue);
+    text-transform: uppercase;
+    background-color: var(--Light_mint_green);
+    margin-left: 1.5px;
+}
+
+.button_insta_f button:hover {
+    background-color: var(--Soft-orange);
+    color: var(--Midnight_blue);
+    scale: 100%;
+}
+
+/* Event Section */
+
+.event_section {
+    width: var(--width-full);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+}
+
+.event_section_headline_box {
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.event_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.event_section_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    padding-top: 50px;
+}
+
+.event_section_container_left {
+    grid-column: 1 / span 4;
+    height: 600px;
+    background-color: var(--Midnight_blue);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.event_section_container_right {
+    grid-column: 6 / span 7;
+    height: 600px;
+    background-image: url(/img/samle\ skrald\ event.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 34px;
+}
+
+.event_left_headline {
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.event_section_container_left ul {
+    color: var(--Cloud_white);
+    font-family: "Quattrocento", serif;
+    font-size: 18px;
+    line-height: 45px;  
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.button_event_f button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color var(--Midnight_blue);
+    text-transform: uppercase;
+    background-color: var(--Light_mint_green);
+    margin-left: 1.5px;
+}
+
+.button_event_f button:hover {
+    background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
 }
 
 
 
-
-
-
-
-
-
+    
 
 
 /* TAG HANDLING ---------------------------------------------------------------------------------------------------------- */
@@ -795,6 +1004,7 @@ max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    
   }
   
   .tag_handling_boxes_1 {
@@ -803,11 +1013,11 @@ max-width: 1200px;
     font-size: 16px;
     height: 380px;
     width: 50%;
-    background-color: #ebebeb;
+    background-color:var(--Midnight_blue); /*farven på box med tekst */
     text-shadow: none;
   }
   
-  .in_the_kitchen_1 img {
+  .tag_handling_boxes_1 img {
     height: 100%;
   
   }
@@ -817,11 +1027,11 @@ max-width: 1200px;
   
   }
   
-  .in_the_kitchen_1_button {
+  .tag_handling_boxes_button {
    margin: 10px 0 0 0
   }
   
-  .in_the_kitchen_1_button button{
+  .tag_handling_boxes_button button{
     border: 1px solid var(--background-color-light);
     background-color: var(--bacground-color-dark-bg);
     border-radius:5px;
@@ -832,9 +1042,9 @@ max-width: 1200px;
   }
   
   
-  .in_the_kitchen_1_button a {
-    background-color: #000000;
-    color:var(--background-color-light);
+  .tag_handling_boxes_button a {
+    background-color:transparent;
+    color: var(--Cloud_white);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -845,17 +1055,17 @@ max-width: 1200px;
     color: var(--bacground-color-dark-bg);
   }
   
-  .text_box_2 {
+  .text_box_2 { /*lille overskrift */
     text-transform: uppercase;
-    color: #BF5B23;
+    color: var(--Cloud_white);
     padding: 10px 0 10px 0;
     font-size: 22px;
     font-weight: 700;
   }
   
-  .text_box_3 {
+  .text_box_3 { /*lang tekst */
     text-transform: initial;
-    color: #000000;
+    color: var(--Cloud_white);
     font-weight: lighter;
   }
 
@@ -1467,7 +1677,7 @@ footer{
     align-items: center;
     transform-style: preserve-3d;
     flex-direction: column;
-    margin-bottom: 100px; 
+    
     
     
 }
@@ -1537,6 +1747,86 @@ footer{
     
 }
 
+/* Replacing hover effect that revealed text */
+
+#turner_1, #turner_2, #turner_3{
+    position:absolute;
+    top:0;
+     left:0;
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+     cursor: pointer;
+     appearance: none;   
+ 
+ }
+ 
+
+#turner_1:checked~.fp_image1{
+    opacity: 0%;
+}
+#turner_2:checked~.fp_image2{
+    opacity: 0%;
+}
+#turner_3:checked~.fp_image3{
+    opacity: 0%;
+}
+/* 
+Responsive solution for images */
+.second_slider{
+    padding: 10px;
+    display: flex;}
+
+   
+.slider_wrapper{
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 110vh;
+    f
+
+}
+.slider{
+    display: flex;
+    
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 5px;
+
+}
+.slider .box{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+/* Fællesskabsside phone version */
+
+    .hero_f {
+        width: var(--width-full);
+    }
+
+    .mail_section {
+        width: var(--width-full);
+    }
+
+    .mail_section_headline_box {
+        width: var(--width-full);
+    }
+
+    .mail_section_container_f {
+        width: var(--width-full);
+    }
+
+    .mail_section_container_left_f {
+        grid-row: 1;
+        width: var(--width-full);
+    }
+
+    .mail_section_container_right_f {
+        grid-row: 2;
+        width: var(--width-full);
+    }
 
 
 
