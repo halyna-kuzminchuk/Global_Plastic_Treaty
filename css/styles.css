@@ -753,7 +753,7 @@ max-width: 1200px;
     height: 80px;
 }
 
-.instgram_section_headline_text {
+.instagram_section_headline_text {
     display: grid;
     grid-template-columns: repeat(12, 1 fr);
     grid-template-rows: auto;
@@ -1904,10 +1904,24 @@ Responsive solution for images */
     z-index: 5;
 }
 
+
+
 /* Fællesskabsside phone version */
+
+    /* hero and mail section */
 
     .hero_f {
         width: var(--width-full);
+    }
+
+    .hero_container_f {
+        width: var(--width-full);
+    }
+
+    .hero_text_f {
+        width: var(--width-full);
+        grid-column: 1 / span 12;
+        padding-left: 10px;
     }
 
     .mail_section {
@@ -1915,7 +1929,12 @@ Responsive solution for images */
     }
 
     .mail_section_headline_box {
+        grid-column: 1 / span 12;
         width: var(--width-full);
+    }
+
+    .mail_section_headline_text {
+        padding-left: 10px;
     }
 
     .mail_section_container_f {
@@ -1923,14 +1942,73 @@ Responsive solution for images */
     }
 
     .mail_section_container_left_f {
+        grid-column: 1 / span 12;
         grid-row: 1;
         width: var(--width-full);
+        margin-bottom: 20px;
+        height:fit-content;
     }
 
     .mail_section_container_right_f {
+        grid-column: 1 / span 12;
         grid-row: 2;
         width: var(--width-full);
     }
+
+    .name_writing_box_f input {
+        width: 300px;
+    }
+
+    .email_writing_box_f input {
+        width: 300px;
+    }
+
+    /* Instagram Section */
+
+    .instagram_section {
+        width: var(--width-full);
+    }
+
+    .instagram_section_headline_box {
+        grid-column: 1 / span 12;
+        width: var(--width-full);
+        display: grid;
+    }
+
+    .instagram_section_headline_text {
+        width: var(--width-full);
+        grid-column: 1 / span 3;
+        padding-left: 10px;
+    }
+
+    .instagram_section_container {
+        width: var(--width-full);
+    }
+
+    .instagram_section_container_left {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+        width: var(--width-full);
+        margin-bottom: 20px;
+        height:fit-content;
+    }
+
+    .instagram_section_container_right {
+        grid-column: 1 / span 6;
+        grid-row: 2;
+        width: var(--width-full);
+    }
+
+
+
+    
+
+
+    
+
+        
+
+
 
 
 
