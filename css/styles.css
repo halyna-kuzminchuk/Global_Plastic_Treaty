@@ -849,6 +849,10 @@ max-width: 1200px;
    color: var(--Midnight_blue);
 }
 
+.hero_text_f h1 {
+    font-size: 32px;
+}
+
 /* Mail Section */
 
 .mail_section {
@@ -881,6 +885,10 @@ max-width: 1200px;
     text-transform: uppercase;
     align-items: center;
     color: var(--Cloud_white);
+}
+
+.mail_section_headline_text h2 {
+    font-size: 28px;
 }
 
 .mail_section_container_f {
@@ -1022,6 +1030,10 @@ max-width: 1200px;
     color: var(--Cloud_white);
 }
 
+.instagram_section_headline_text h2 {
+    font-size: 28px;
+}
+
 .instagram_section_container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1127,6 +1139,10 @@ max-width: 1200px;
     text-transform: uppercase;
     align-items: center;
     color: var(--Cloud_white);
+}
+
+.event_section_headline_text h2 {
+    font-size: 28px;
 }
 
 .event_section_container {
@@ -2358,7 +2374,7 @@ Responsive solution for images */
         display: grid;
     }
 
-    @media (width<490px) {
+    @media (width<535px) {
     .instagram_section_headline_box {
         height: 100px;
     }  
