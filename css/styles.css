@@ -38,14 +38,20 @@
 body{
     font-family: var(--Font_Oswald);
     background-color: var(--Cloud_white);
-    height: auto;
+    height: 100%;
     /* min-height: 100vh; */
     
 }
 
+main{
+    width: var(--width-full);
+    background-color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    margin-bottom: 50px;
+}
 
 .main_container{
-    position: relative;
+    /* position: relative; */
         
     font-family: var(--Font_Oswald);
     height: auto;
@@ -196,6 +202,10 @@ header{
     height: fit-content;
     padding: 10px 30px ;
     background-color: var(--Soft-orange);
+
+    /* I added this to make the button pop out, we can delete */
+
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset; 
     border-radius: 5px;
     border: none;
     margin: 0 10px;
@@ -295,7 +305,7 @@ h1{
 
 .information_block{
     width: var(--width-full);
-    height: auto;
+    height: 100%;
     margin: 50px auto 0 auto;
     background-color: var(--Cloud_white);
 }
@@ -548,6 +558,91 @@ max-width: 1200px;
 .second_slider{
     display: none;
 }
+
+.between{
+    display: flex;
+    width: var(--width-full);
+    height: fit-content;
+    margin: 50px auto;
+    background-color: var(--Cloud_white);
+    justify-content: center;
+    align-items: center;
+}
+.fp_video{
+    position: relative;
+    
+    margin:0;
+    width: var(--width-full);
+   
+    height: fit-content;
+}
+
+.fp_video video{
+   
+    width: var(--width-full);
+   
+    margin: 0;
+    object-fit: cover ;
+    max-height: 680px;;
+    
+
+
+
+}
+.video_frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.video_text{
+    max-width: var(--width-12col-);
+    padding: 20px 0;
+    height: 80%;
+    position: absolute;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr) ;
+    gap: 10px;  
+   
+    
+}
+
+.video_text h4{
+    
+    grid-column: 1/span 3;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+    
+    padding: 10px;
+    font-family: var(--Font_Oswald);
+    font-size: 32px;
+    color: var(--Cloud_white);
+    text-align: center;
+    background-color:#132a2c3f;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+.video_text p{
+    grid-column: 1/span 3;
+    grid-row: 2;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+   
+    padding: 10px;
+    font-family: var(--Fond_Q);
+    font-size: 24px;
+    color: var(--Cloud_white);
+    text-align: center;
+    background-color:#132a2c3f;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+    
+
+
 
 
 .placeholder{
@@ -1103,7 +1198,51 @@ max-width: 1200px;
 
 /* SKRIV UNDER ----------------------------------------------------------------------------------------------------------- */
 
+/* 
+.underskriv-container {
+    padding: 2rem;
+}
+.slider-wrapper-u {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider-u {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow: auto;
+    scroll-snap-type: ;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25%);
+    border-radius: 5px;
+}
+.slider-u img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-u-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 
+}
+.slider-u-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-u-nav a:hover {
+    opacity: 1;
+}
+ */
 .hero-container-underskriv-img {
     background-image: url(/img/plastic_in_hand.png);
     grid-column: 8 span 5;
@@ -1119,16 +1258,18 @@ max-width: 1200px;
  /* 
 .underskriv-overlay {
     position: absolute;
+    margin-top: 100px;
     top: 0;
     left: 0;
     width: 100%;
-    height: 820px;
+    height: 720px;
     background-color: rgba(149, 204, 166, 0.4); 
     pointer-events: none;  
     z-index: 1;
 
-}
- */
+
+} */
+ 
 .hero-container-underskriv {
     display:grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1143,8 +1284,9 @@ max-width: 1200px;
   
 .hero-text-underskriv-glass-container {
     grid-column: 7/ span 8;
-    margin:100px auto auto 20px;
+    margin:200px auto auto 20px;
     grid-row: 1;
+    z-index: 2;
 }
 
 .hero-text-underskriv-glass-container {
@@ -1196,17 +1338,19 @@ max-width: 1200px;
     margin: 30px auto auto 70px ;
     background-color: var(--Cloud_white);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.9);
     text-align: center;
     width: 400px;
     height: auto;
     border-radius: 5px;
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(53, 53, 52, 0.7);
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    z-index: 2;
   }
-  .sign-box:hover {
-    box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.1), -12px -12px 25px rgba(110, 109, 108, 0.7);
+  
+.sign-box:hover {
+    box-shadow:  0px 10px 70px rgba(0, 0, 0, 0.9);
+
   }
 
 .timeline {
@@ -1230,7 +1374,15 @@ max-width: 1200px;
     font-size: 12px;
     font-weight: bold;
     position: relative;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.1), -2px -2px 7px rgba(9, 9, 9, 0.7);
+    transition: all 0.3s ease;
 }
+  
+.circle:hover {
+    box-shadow: 12px 12px 25px rgba(97, 130, 142, 0.1), -12px -12px 25px rgba(110, 109, 108, 0.7);
+}
+
+
 
 .line {
     width: 100px;
@@ -1297,6 +1449,7 @@ max-width: 1200px;
     font-size: 12px;
     text-align: start;
     margin-left: 20px ;
+    line-height: 1.2;
 
 }
 
@@ -1333,7 +1486,7 @@ max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr;  
     grid-template-rows: 1fr 1fr;    
-    gap: var(--grid-gap);
+    gap: 20px;
     margin: 40px auto 40px auto;
   }
 
@@ -1344,29 +1497,15 @@ max-width: 1200px;
     background-position: center ;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
 }
 
 .brug_din_stemme_content_image img:hover {
-  transform: rotateY(180deg);
-}
-
-.brug_din_stemme_content_image img .front,
-.brug_din_stemme_content_image img .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.brug_din_stemme_content_image img .front {
-  background-color: #9b59b6;
-}
-
-.brug_din_stemme_content_image img .back {
-  background-color: #f39c12;
-  transform: rotateY(180deg);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    filter: brightness(1);
 }
 
 .brug_din_stemme_content {
@@ -1376,9 +1515,9 @@ max-width: 1200px;
     width: 595px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
+    border-radius: 5px;
 }
  
-
 .brug_din_stemme_content_block_box {
     background-color: var(--Cloud_white);
     position: relative;
@@ -1398,12 +1537,7 @@ max-width: 1200px;
     
 
 
-}/* 
-.brug_din_stemme_content_block_text_top p {
-    font-size: 12;
-    font-family: 'font Q', sans-serif;
-
-}/*  */
+}
 
 .brug_din_stemme_content_block_text {
     padding: 20px;
@@ -1440,8 +1574,6 @@ max-width: 1200px;
 .box:hover >.trans_button {
     box-shadow: 10px 10px 10px var(--Blue_grey), -10px -10px 10px var(--Light_mint_green); 
 }
-
-
 .placeholder{
     height: 200px;
 }
@@ -1459,17 +1591,20 @@ max-width: 1200px;
     width: var(--width-full);
     margin: 20px auto;
     font-family: var(--Font_Oswald);
-    box-shadow: 2px 2px 2px dark var(--Midnight_blue);;
+    box-shadow: 2px 2px 2px dark var(--Blue_grey);
     
 }
 
-.underskriv_video_box {
+.underskriv_video_box video{
     display: flex;
     justify-content: center;
     align-content: center;
     width: var(--width-12col);
     margin: 40px auto;
     border-radius: 5px;
+    height: auto;
+ 
+    
  
 }
 
@@ -1482,12 +1617,14 @@ footer{
     /* position: fixed;
     left: 0;
     bottom: 0; */
-    height: auto;
+    height: 100%;
     width: 100%;
     background-color:var(--Midnight_blue);
+    margin-top: 50px;
 
 }
 .foot_container{
+    height: 100%;
     max-width:var(--width-12col) ;
     background-color: var(--Midnight_blue);
     display: flex;
@@ -1579,7 +1716,47 @@ footer{
 
 
 
+@media (width<1024px){
 
+    /* start underskriv siden */
+    .hero-text-underskriv-glass-container {
+        width: 45%;
+        margin: 200px 0 0 0;
+    }
+    .underskriv-big-header {
+        font-size: 24px;
+    }
+    .hero-text-underskriv-glass-container p {
+        font-size: 24px;
+     }    
+     .brug-din-stemme {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        gap: 10px;
+    
+      }
+    
+    .brug_din_stemme_content {
+        
+        width: 100%;
+       
+    }
+     
+    
+    .brug_din_stemme_content_block_box {
+        width: 100%;
+    
+    }
+    .brug_din_stemme_content_image img {
+    
+        width: 100%;
+    
+    }
+    .underskriv_video_box video {
+        width: 100%;
+    }
+}
 
 
 @media (width<769px){  
@@ -1697,7 +1874,7 @@ footer{
       height: 100%;
       top: 130px;
       
-      ;
+      
       
     }
     .front_page_hero_box{
@@ -1708,6 +1885,8 @@ footer{
         grid-template-rows: 130px 130px;
         gap: var(--grid-gap);
         width: 100%;
+        height: 100%;
+        margin-bottom: 130px;
         
 
 
@@ -1717,8 +1896,8 @@ footer{
         
     
     .information_block{
-        position:inherit;
-        top: 130px; 
+        
+        
        
        }
     .counter{
@@ -2125,9 +2304,92 @@ Responsive solution for images */
     .hero-text-underskriv-glass-container {
         display: none;
     }
+    .sign-box {
+        width: 50%;
+    
+    }
+    .sign-box-h2 {
+        font-size: 20px;
+        margin: auto;
+    }
+    .sign-box-h3 {
+        font-size: 16px;
+        margin: auto;
+    }
+    .signature-area {
+        width: 50%;
+        margin-top: 15px;
+        margin-left: 30px;
+    
+    }
+    .signature-form {
+        width: 50%;
+    
+    }
+    .signature-area input {
+        width: fit-content;
+        margin: auto;
+    
+    }
+    .privatlivs-text {
+        font-size: 10px;
+        margin: 5px;
+    }
+    .sign-box-h2 {
+        font-size: 24px;
+    }
+
+    .sign-box-h3 {
+        font-size: small;
+    }
+
+    .brug-din-stemme-header h2 {
+        font-size: 20px;
+    }
+
+    .brug-din-stemme {
+        width: 100%;
+        display: grid;
+        grid-template-columns:1fr;  
+        gap: 10px;
+    
+      }
+    
+      .brug_din_stemme_content {
+        
+        width: 100%;
+       
+    }
+     
+    
+    .brug_din_stemme_content_block_box {
+        width: 100%;
+    
+    }
+    .brug_din_stemme_content_image img {
+    
+        width: 100%;
+    
+    }
+    .trans_button_u {
+       height: auto;
+       width: 300px;
+       
+        
+    }
+    .video-container-header h2{
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .underskriv_video_box {
+        width: 100%;
 
 }
-/* slut underskriv side @media width<769pz */
+
+ 
+}
+/* slut underskriv side @media width<769px */
 
 
 @media (width<415px){
@@ -2137,6 +2399,14 @@ Responsive solution for images */
         padding: 10px;
              
         
+    }
+    
+
+    .video_text p{
+        display: none;
+    }
+    .video_text h4{
+        grid-row: 2 /span 3;
     }
 
 
@@ -2161,13 +2431,66 @@ Responsive solution for images */
 
 /* end Tag handling ---*/ 
 
-/* start underskriv side @media width<769px */
+/* start underskriv side @media width<415px */
+.hero-container-underskriv-img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto 20px auto;
+    
+}
+
+.hero-section-underskriv {
+    place-content: center;
+    
+}
+.underskriv-overlay {
+    display: none;
+}
 .sign-box {
-    width: 50%;
+    width: 45%;
+    grid-column: 1/ span 5;
+    grid-row: 1;
+    margin: 50px;
+}
+.sign-box-h2 {
+    font-size: 16px;
+    margin: auto;
+}
+.sign-box-h3 {
     font-size: 12px;
+    margin: auto;
 }
-.underskriv-big-header {
-    font-size: x-small;   
+.signature-area {
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 15px;
+
 }
-/* slut underskriv side @media width<769pz */
+.signature-form {
+    width: 50%;
+
+}
+.signature-area input {
+    width: fit-content;
+    margin: auto;
+
+}
+.buttons_underskriv button{
+    width: 80%;
+    font-size: 14px;
+}
+.privatlivs-text {
+    font-size: 8px;
+    margin: 5px;
+}
+.brug-din-stemme-header h2 {
+    font-size: 16px;
+}
+.trans_button_u {
+    height: auto;
+    width: 200px;
+ 
+ }
+
+/* slut underskriv side @media width<415px */
 }
