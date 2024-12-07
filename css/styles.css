@@ -47,11 +47,11 @@ main{
     width: var(--width-full);
     background-color: var(--Cloud_white);
     font-family: var(--Font_Oswald);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .main_container{
-    /* position: relative; */
+   
         
     font-family: var(--Font_Oswald);
     height: auto;
@@ -640,11 +640,171 @@ max-width: 1200px;
     backdrop-filter: blur(2px);
     border-radius: 5px;
 }
+
+.invite_to_pages{
+    width: var(--width-full);
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--Cloud_white);
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 130px, auto, 130px, auto;
+       
+    gap:50px;
+    
+
+}
+.topic_bar{    
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    background-color: var(--Midnight_blue);  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   
+    padding: 0 10px;
+
+}
+
+.first{
+    grid-column: 1/span 2;
+    grid-row: 1;
+   
+
+
+}
+.second{
+    grid-column: 1/span 2;
+    grid-row: 3;
+    
+}
+.topic_bar_text{      
+    max-width:var(--width-12col); 
+    width: 100%;
+    height: 100%;    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.topic_bar h3{
+    font-family: var(--Font_Oswald);
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--Cloud_white);
+    font-weight: 400;
+}
+.news{
+    grid-column: 1/span 2;
+    grid-row: 2;
+    max-width: var(--width-12col);
+    width: 100%;
+    height: 405px;
+    margin: 0 auto;
+    display: flex;
+    
+    
+    
+    
+
+}
+
+.news_catch_image{
+    display: flex;
+    background-image: url(/img/Negotiations.jpg);
+    background-size: cover;
+    width: min(595px, 100%);
+    height: min(405px, 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+   
+}
+
+.advice{
+    grid-column: 1/span 2;
+    grid-row: 4;
+    max-width: var(--width-12col);
+    width: 100%;
+    height: 405px;
+    margin: 0 auto;
+    display: flex;    
+    flex-grow: 1;
+   
     
 
 
+}
+.advice_catch_image{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 595px;
+    max-height: 405px;   
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    background-image: url(/img/glasses.jpg);
+}
+.content{
+    height: 100%;
+    width: 100%;
+    max-width: 595px;
+    max-height: 405px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 40px;
+    align-items: start;
+    padding: 0 40px;
+    
+    
 
+}
+.news .content{
+    padding-left: 50px;
+}
+.content ul{
+    list-style: none;
+}
+.content .main_button{
+    background-color: var(--Light_mint_green);
 
+    /* I added this to make the button pop out, we can delete */
+
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset; 
+    align-self: center;
+
+}
+.content li{
+    font-family: var(--Font_Oswald);
+    color: var(--Midnight_blue);
+    text-transform: uppercase;
+    font-size: 32px;
+
+}
+.content p{ font-family: var(--Fond_Q);
+    font-size: 18px;
+    color: var(--Midnight_blue);
+
+}
+
+.share{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-content: center;
+    justify-content: start;
+    gap: 20px;
+}
+.share li{
+    font-family: var(--Fond_Q);
+    font-size: 18px;
+    color: var(--Midnight_blue);
+    text-transform: none;
+}
 .placeholder{
     height: 200px;
 }
@@ -1702,6 +1862,55 @@ footer{
 
 @media (width<1024px){
 
+    /* Front page */
+ .news,.advice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ .advice_catch_image{
+    order: -1;
+    width: 90%;
+    height:100%;
+    max-width:  300px;
+   
+    max-height: 200px;
+    
+ }
+ .news_catch_image{
+    width: 90%;
+    height: 100%;
+    max-width:  300px;
+   
+    max-height: 200px;
+ }
+ 
+
+ .content li{
+ 
+    font-size: 24px;
+    
+
+}
+.content ul{
+    padding-top: 10px;
+}
+
+.content p{ 
+    font-size: 14px;
+  
+
+}
+
+
+.share li{
+    
+    font-size: 14px;
+   
+}
+
+    
     /* start underskriv siden */
     .hero-text-underskriv-glass-container {
         width: 45%;
@@ -1879,11 +2088,8 @@ footer{
         
         
     
-    .information_block{
-        
-        
-       
-       }
+  
+
     .counter{
         height: auto;
         width:100vw;
