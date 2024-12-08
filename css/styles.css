@@ -1981,10 +1981,6 @@ footer{
     }
 
 
-    /* start Tag handling <1025px */
-
-    /* slut Tag handling <1025px */
-
 }
 
 
@@ -2572,19 +2568,47 @@ Responsive solution for images */
     }
 
 
-    .text_box_1 { /* skal være iconet */
+      
+
+      /*de 6 kasser*/
+        
+    .tag_handling_boxes {
+        width: 90%; /* så det ikke fylder hele skærmen */
+        padding-bottom: 150px; /* mellemrum mellem bund og footer */
+     }
+      
+    .tag_handling_boxes_1 {
+        width: 100%; /* så der kun er 1 box og fylder skærmen */
+        height: auto; 
+     }
+      
+    .txt-box {
+        padding: 30px; 
+        font-size: 16px; 
+    }
+      
+     .tag_handling_boxes_button button {
+         font-size: 12px; /* Medium font size for buttons */
+         padding: 10px 25px; /* Adjust button padding */
+     }
+      
+     .tag_handling_boxes_button a {
+      font-size: 12px; 
+     }
+
+     .text_box_1 { /* er iconet */
         display: none; /*sletter iconerne */
       }
       
-
-      .tag_handling_boxes {
-        height: fit-content;
-        color:var(--color-white);
-        width: 100%; /* så det scaler ned */
-        margin:70px auto 0 auto;
-        text-shadow: 1px 1px 1px var(--primary-color);
-        padding-bottom: 200px;
-      }
+     .text_box_2 {
+     font-size: 20px; 
+    }
+      
+     .text_box_3 {
+          font-size: 16px; 
+     }
+}
+      
       
 
 /* end Tag handling ---*/ 
@@ -2679,7 +2703,7 @@ Responsive solution for images */
 }
 
  
-}
+
 /* slut underskriv side @media width<769px */
 
 
