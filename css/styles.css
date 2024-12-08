@@ -1253,6 +1253,7 @@ max-width: 1200px;
     background-size: cover;
     width: 100%;
     height: 680px;
+    margin-bottom: 80px; /*laver mellemrum under hero img og næste box */
 }
 
 .filler_block_content_handling_hero_img p { /* Text på hero img */
@@ -1275,19 +1276,6 @@ max-width: 1200px;
     background-color:var(--Cloud_white) ;
 }
 
-.filler_block_content_handling_filler_dark{ /*mørk boks under hero img*/
-    width: var(--width-12col);
-    height: 80px;
-    background-color: var(--Midnight_blue);
-    margin-top: 60px;
-}
-
-.filler_block_content_handling_filler_dark p { /*tekst under hero img */
-    color: var(--Cloud_white);
-    font-family: var(--Font_Oswald);
-    font-size: 32px;
-    text-transform: uppercase; /*writes the text in caps */
-}
 
 
 /*Start på de 6 kasser/ hjælp fra Recipe code */
@@ -1326,23 +1314,21 @@ max-width: 1200px;
   
   .txt-box {
     padding:80px
-  
   }
   
   .tag_handling_boxes_button { /* styling for the button container */
-   margin: 10px 0 0 0
+   margin: 10px 0 0 0;
   }
   
-  .tag_handling_boxes_button button{ /* styling for inside the button*/
+  .tag_handling_boxes_button button {
     border: 1px solid var(--Cloud_white);
-    background-color:transparent;
-    border-radius:5px;
+    background-color: transparent;
+    border-radius: 5px;
     font-size: 12px;
     font-weight: 700;
-    padding:10px 30px 10px 30px;
+    padding: 10px 30px;
     box-shadow: 1px 1px 1px var(--Cloud_white);
-  }
-  
+}
   
   .tag_handling_boxes_button a { /* styling for the link */ 
     background-color:transparent;
@@ -1354,12 +1340,11 @@ max-width: 1200px;
 
   .tag_handling_boxes_button:hover { /*hover effect*/
     transform: scale(1.1);
-
   }
 
+
   
-  
-  .text_box_1 {
+  .text_box_1 { /* skal være iconet */
     font-weight: bold;
     color: var(--bacground-color-dark-bg);
   }
@@ -1990,6 +1975,12 @@ footer{
     .underskriv_video_box video {
         width: 100%;
     }
+
+
+    /* start Tag handling <1025px */
+
+    /* slut Tag handling <1025px */
+
 }
 
 
@@ -2577,6 +2568,7 @@ Responsive solution for images */
 
     /* end Tag handling ---*/ 
     
+    
 /* start underskriv side @media width<769px */
     
     .hero-text-underskriv-glass-container {
@@ -2696,7 +2688,7 @@ Responsive solution for images */
 
 
 
-/*Tag handling @media <400px----*/
+/*Tag handling @media <415px----*/
 
 .filler_block_content_handling_hero_img {
     background-image: url("/img/Tag\ handling.jpg");
