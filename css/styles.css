@@ -799,12 +799,20 @@ max-width: 1200px;
 
 }
 .content li{
+    width: fit-content;
     font-family: var(--Font_Oswald);
     color: var(--Midnight_blue);
     text-transform: uppercase;
     font-size: 32px;
 
 }
+
+
+
+
+
+
+
 .content p{ font-family: var(--Fond_Q);
     font-size: 18px;
     color: var(--Midnight_blue);
@@ -827,14 +835,10 @@ max-width: 1200px;
     text-transform: none;
    
     display: flex;
-    justify-content: center;
-    padding: 0 10px;
+    justify-content: start;
+    /* padding: 0 10px; */
 
 }
-.placeholder{
-    height: 200px;
-}
-
 
 
 
@@ -2178,6 +2182,7 @@ footer{
     /* Creaating a swiper */
 
     .hider{
+        margin: 0;
         display: none;}
 
 .swiper_container{
