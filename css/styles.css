@@ -1262,10 +1262,12 @@ max-width: 1200px;
 .filler_block_content_handling_hero_img p { /* Text på hero img */
     font-family: var(--Font_Oswald);
     font-size: 32px;
-    text-align: center;
     color: var(--Midnight_blue);
     text-transform: uppercase;
     font-weight: 600; /*makes it more bold */
+    padding: 5px ;
+    background-color: rgba(249, 249, 249, 0.675);
+    border-radius: 5px;
    
 }
 
@@ -2565,8 +2567,9 @@ Responsive solution for images */
     
     .filler_block_content_handling_hero_img p {
         font-size: 32px;
-        text-align: center;
-        padding-top: 100px;
+        padding: 5px ;
+        background-color: rgba(249, 249, 249, 0.675);
+        border-radius: 5px;
     }
 
     /* end Tag handling ---*/ 
@@ -2694,18 +2697,21 @@ Responsive solution for images */
 /*Tag handling @media <415px----*/
 
 .filler_block_content_handling_hero_img {
-    background-image: url("/img/Tag\ handling.jpg");
+    background-image: url("/img/Tag\ handling\ hero\ img.jpg");
     width: 100%;
     height: 265px;
 }
 
 .filler_block_content_handling_hero_img p {
     font-size: 32px;
-    text-align: center;
-    padding-top: 100px;
+    padding: 5px ;
+    background-color: rgba(249, 249, 249, 0.675);
+    border-radius: 5px;
 }
 
 /* end Tag handling ---*/ 
+
+
 
 /* start underskriv side @media width<415px */
 .hero-container-underskriv-img {
