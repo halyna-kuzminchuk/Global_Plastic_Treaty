@@ -1329,28 +1329,35 @@ max-width: 1200px;
   
   }
   
-  .tag_handling_boxes_button {
+  .tag_handling_boxes_button { /* styling for the button container */
    margin: 10px 0 0 0
   }
   
-  .tag_handling_boxes_button button{
-    border: 1px solid var(--background-color-light);
-    background-color: var(--bacground-color-dark-bg);
+  .tag_handling_boxes_button button{ /* styling for inside the button*/
+    border: 1px solid var(--Cloud_white);
+    background-color:transparent;
     border-radius:5px;
     font-size: 12px;
     font-weight: 700;
-    cursor:pointer;
     padding:10px 30px 10px 30px;
+    box-shadow: 1px 1px 1px var(--Cloud_white);
   }
   
   
-  .tag_handling_boxes_button a {
+  .tag_handling_boxes_button a { /* styling for the link */ 
     background-color:transparent;
     color: var(--Cloud_white);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
   }
+
+  .tag_handling_boxes_button:hover { /*hover effect*/
+    transform: scale(1.1);
+
+  }
+
+  
   
   .text_box_1 {
     font-weight: bold;
