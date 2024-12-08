@@ -1257,16 +1257,22 @@ max-width: 1200px;
     background-size: cover;
     width: 100%;
     height: 680px;
+    margin-bottom: 80px; /*laver mellemrum under hero img og næste box */
+    display: flex;
+    align-items: center; /* Centrerer elementerne vertikalt */
+    justify-content: center;  /* Centrerer elementerne horisontalt */ 
 }
 
 .filler_block_content_handling_hero_img p { /* Text på hero img */
     font-family: var(--Font_Oswald);
     font-size: 32px;
-    text-align: center;
     color: var(--Midnight_blue);
-    padding-top: 350px;
     text-transform: uppercase;
     font-weight: 600; /*makes it more bold */
+    padding: 5px ;
+    background-color: rgba(249, 249, 249, 0.675);
+    border-radius: 5px;
+   
 }
 
 
@@ -1279,19 +1285,6 @@ max-width: 1200px;
     background-color:var(--Cloud_white) ;
 }
 
-.filler_block_content_handling_filler_dark{ /*mørk boks under hero img*/
-    width: var(--width-12col);
-    height: 80px;
-    background-color: var(--Midnight_blue);
-    margin-top: 60px;
-}
-
-.filler_block_content_handling_filler_dark p { /*tekst under hero img */
-    color: var(--Cloud_white);
-    font-family: var(--Font_Oswald);
-    font-size: 32px;
-    text-transform: uppercase; /*writes the text in caps */
-}
 
 
 /*Start på de 6 kasser/ hjælp fra Recipe code */
@@ -1325,38 +1318,41 @@ max-width: 1200px;
   
   .tag_handling_boxes_1 img {
     height: 100%;
-  
   }
   
   .txt-box {
     padding:80px
-  
   }
   
-  .tag_handling_boxes_button {
-   margin: 10px 0 0 0
+  .tag_handling_boxes_button { /* styling for the button container */
+   margin: 10px 0 0 0;
   }
   
-  .tag_handling_boxes_button button{
-    border: 1px solid var(--background-color-light);
-    background-color: var(--bacground-color-dark-bg);
-    border-radius:5px;
+  .tag_handling_boxes_button button {
+    border: 1px solid var(--Cloud_white);
+    background-color: transparent;
+    border-radius: 5px;
     font-size: 12px;
     font-weight: 700;
-    cursor:pointer;
-    padding:10px 30px 10px 30px;
-  }
+    padding: 10px 30px;
+    box-shadow: 1px 1px 1px var(--Cloud_white);
+}
   
-  
-  .tag_handling_boxes_button a {
+  .tag_handling_boxes_button a { /* styling for the link */ 
     background-color:transparent;
     color: var(--Cloud_white);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
   }
+
+  .tag_handling_boxes_button:hover { /*hover effect*/
+    transform: scale(1.1);
+  }
+
+
   
-  .text_box_1 {
+  .text_box_1 { /* skal være iconet */
     font-weight: bold;
     color: var(--bacground-color-dark-bg);
   }
@@ -1987,6 +1983,44 @@ footer{
     .underskriv_video_box video {
         width: 100%;
     }
+
+    /* tag handling <1025px --------*/
+    .tag_handling_boxes {
+        width: 90%; /* så det ikke fylder hele skærmen */
+        padding-bottom: 150px; /* mellemrum mellem bund og footer */
+     }
+      
+    .tag_handling_boxes_1 {
+        width: 100%; /* så der kun er 1 box og fylder skærmen */
+        height: auto; 
+     }
+      
+    .txt-box {
+        padding: 30px; 
+        font-size: 16px; 
+    }
+      
+     .tag_handling_boxes_button button {
+         font-size: 12px; /* Medium font size for buttons */
+         padding: 10px 25px; /* Adjust button padding */
+     }
+      
+     .tag_handling_boxes_button a {
+      font-size: 12px; 
+     }
+
+     .text_box_1 { /* er iconet */
+        display: none; /*sletter iconerne */
+      }
+      
+     .text_box_2 {
+     font-size: 20px; 
+    }
+      
+     .text_box_3 {
+          font-size: 16px; 
+     }
+
 }
 
 
@@ -2560,20 +2594,30 @@ Responsive solution for images */
     }
 
 
-    /*Tag handling @media <769px----*/
+    /*Tag handling @media <769px---------*/
     .filler_block_content_handling_hero_img {
-        background-image: url("/img/Tag\ handling.jpg");
+        background-image: url("/img/Tag\ handling\ hero\ img.jpg");
         width: 100%;
         height: 350px;
     }
     
     .filler_block_content_handling_hero_img p {
         font-size: 32px;
-        text-align: center;
-        padding-top: 100px;
+        padding: 5px ;
+        background-color: rgba(249, 249, 249, 0.675);
+        border-radius: 5px;
     }
 
-    /* end Tag handling ---*/ 
+    /* slut Tag handling */
+
+        
+    
+}
+      
+      
+
+/* end Tag handling ---*/ 
+
     
 /* start underskriv side @media width<769px */
     
@@ -2664,7 +2708,7 @@ Responsive solution for images */
 }
 
  
-}
+
 /* slut underskriv side @media width<769px */
 
 
@@ -2694,21 +2738,24 @@ Responsive solution for images */
 
 
 
-/*Tag handling @media <400px----*/
+/*Tag handling @media <415px----*/
 
 .filler_block_content_handling_hero_img {
-    background-image: url("/img/Tag\ handling.jpg");
+    background-image: url("/img/Tag\ handling\ hero\ img.jpg");
     width: 100%;
     height: 265px;
 }
 
 .filler_block_content_handling_hero_img p {
     font-size: 32px;
-    text-align: center;
-    padding-top: 100px;
+    padding: 5px ;
+    background-color: rgba(249, 249, 249, 0.675);
+    border-radius: 5px;
 }
 
 /* end Tag handling ---*/ 
+
+
 
 /* start underskriv side @media width<415px */
 .hero-container-underskriv-img {
