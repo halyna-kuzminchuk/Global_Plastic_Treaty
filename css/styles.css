@@ -1288,7 +1288,7 @@ max-width: 1200px;
 .tag_handling_boxes {
     height: fit-content;
     color:var(--color-white);
-    width: var(--width-12col);
+    width: 100%;
     margin:70px auto 0 auto;
     text-shadow: 1px 1px 1px var(--primary-color);
     padding-bottom: 200px;
@@ -1314,7 +1314,6 @@ max-width: 1200px;
   
   .tag_handling_boxes_1 img {
     height: 100%;
-  
   }
   
   .txt-box {
@@ -2572,7 +2571,14 @@ Responsive solution for images */
         border-radius: 5px;
     }
 
-    /* end Tag handling ---*/ 
+
+    .text_box_1 { /* skal være iconet */
+        display: none; /*sletter iconerne */
+      }
+      
+      
+
+/* end Tag handling ---*/ 
 
     
 /* start underskriv side @media width<769px */
