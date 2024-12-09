@@ -297,7 +297,7 @@ h1{
     align-content: center;
     background-color: #fffef94a;
     backdrop-filter: blur(2px);
-    padding-left: 10px;
+    padding: 10px 0 10px 10px;
     height: fit-content;
     border-radius: 5px;    
 }
