@@ -36,7 +36,7 @@
   }
 
 body{
-    font-family: var(--Font_Oswald);
+    
     background-color: var(--Cloud_white);
     height: 100%;
     /* min-height: 100vh; */
@@ -46,14 +46,14 @@ body{
 main{
     width: var(--width-full);
     background-color: var(--Cloud_white);
-    font-family: var(--Font_Oswald);
+    
     margin-bottom: 20px;
 }
 
 .main_container{
    
         
-    font-family: var(--Font_Oswald);
+   
     height: auto;
     width: var(--width-full);
     
