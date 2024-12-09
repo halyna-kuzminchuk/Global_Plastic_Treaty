@@ -2457,9 +2457,12 @@ Responsive solution for images */
      .text_box_3 {
           font-size: 16px; 
      }
-    #swap{
-        order: 3;
-
+     .tag_handling_boxes_1:nth-child(3) {
+        order: 4; 
+    }
+    
+    .tag_handling_boxes_1:nth-child(4) {
+        order: 3; 
     }
 
     /* slut Tag handling */
