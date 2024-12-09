@@ -1344,7 +1344,7 @@ max-width: 1200px;
   }
 
   .tag_handling_boxes_button:hover { /*hover effect*/
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   .text_box_1 { /* skal være iconet */
@@ -1364,6 +1364,7 @@ max-width: 1200px;
     text-transform: initial;
     color: var(--Cloud_white);
     font-weight: lighter;
+    font-family: var(--Fond_Q);
   }
 
 
