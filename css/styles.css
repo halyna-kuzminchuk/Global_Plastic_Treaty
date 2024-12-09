@@ -959,7 +959,7 @@ max-width: 1200px;
 
 .left_text_f {
     color: var(--Cloud_white);
-    font-family: "Quattrocento", serif;
+    font-family: var(--Fond_Q);
     font-size: 18px;
     line-height: 30px;   
 }
