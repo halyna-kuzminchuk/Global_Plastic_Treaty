@@ -965,7 +965,7 @@ max-width: 1200px;
 }
 
 .left_text_f p {
-    padding-bottom: 10px;
+    font-family: var(--Fond_Q);
 }
 
 .right_headline_f {
@@ -1113,7 +1113,7 @@ max-width: 1200px;
 }
 
 .insta_left_text p {
-    padding-bottom: 10px;
+    font-family: var(--Fond_Q);
 }
 
 .button_insta_f button {
@@ -1193,6 +1193,10 @@ max-width: 1200px;
     flex-direction: column;
     padding: 50px;
     border-radius: 5px;
+}
+
+.event_section_container_left li {
+    font-family: var(--Fond_Q);
 }
 
 .event_section_container_right {
