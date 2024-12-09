@@ -1273,7 +1273,7 @@ max-width: 1200px;
     color: var(--Midnight_blue);
     text-transform: uppercase;
     font-weight: 600; /*makes it more bold */
-    padding: 5px ;
+    padding: 10px ;
     background-color: rgba(249, 249, 249, 0.675);
     border-radius: 5px;
    
