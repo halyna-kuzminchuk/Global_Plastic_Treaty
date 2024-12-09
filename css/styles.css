@@ -2500,6 +2500,10 @@ Responsive solution for images */
      .text_box_3 {
           font-size: 16px; 
      }
+    #swap{
+        order: 3;
+
+    }
 
     /* slut Tag handling */
          
