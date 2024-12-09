@@ -2453,6 +2453,7 @@ Responsive solution for images */
     .tag_handling_boxes_1 {
         width: 100%; /* så der kun er 1 box og fylder skærmen */
         height: auto; 
+        margin-top: 10px;
      }
       
     .txt-box {
@@ -2488,6 +2489,7 @@ Responsive solution for images */
     .tag_handling_boxes_1:nth-child(4) {
         order: 3; 
     }
+
 
     /* slut Tag handling */
          
