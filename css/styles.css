@@ -1275,7 +1275,6 @@ max-width: 1200px;
    
 }
 
-
 .filler_block_content_handling{ /* block mellem hero og footer*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1284,8 +1283,6 @@ max-width: 1200px;
     height: 3200px;
     background-color:var(--Cloud_white) ;
 }
-
-
 
 /*Start på de 6 kasser/ hjælp fra Recipe code */
 
@@ -1350,8 +1347,6 @@ max-width: 1200px;
     transform: scale(1.1);
   }
 
-
-  
   .text_box_1 { /* skal være iconet */
     font-weight: bold;
     color: var(--bacground-color-dark-bg);
@@ -1370,14 +1365,6 @@ max-width: 1200px;
     color: var(--Cloud_white);
     font-weight: lighter;
   }
-
-
-
-
-
-
-
-
 
 
 /*End of TAG HANDLING*/
@@ -1439,7 +1426,6 @@ max-width: 1200px;
     padding-top: 30px;
     margin-bottom: 40px;
     color:var(--Midnight_blue);
-
  }
  /* 
 .underskriv-overlay {
@@ -1464,15 +1450,12 @@ max-width: 1200px;
     gap:var(--grid-gap);
     margin: auto;
     height: auto;
-   
-    
 }
   
 .hero-text-underskriv-glass-container {
     grid-column: 7/ span 8;
     margin:200px auto auto 20px;
     grid-row: 1;
-    z-index: 2;
 }
 
 .hero-text-underskriv-glass-container {
@@ -1488,7 +1471,6 @@ max-width: 1200px;
     box-shadow: 6px 6px 6px rgba(0,0,0,0.089);
     text-align: right; 
     transition: box-shadow 0.3s ease;
- 
 }
 .hero-text-underskriv-glass-container:hover {
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
@@ -1507,8 +1489,6 @@ max-width: 1200px;
     text-transform: uppercase;
     margin-top: 50px;
     font-weight: bold;
-    
-
 }
 .underskriv_highlight {
     color: var(--Soft-orange);
@@ -1531,12 +1511,10 @@ max-width: 1200px;
     height: auto;
     border-radius: 5px;
     transition: box-shadow 0.3s ease;
-    z-index: 2;
   }
   
 .sign-box:hover {
     box-shadow:  0px 10px 70px rgba(0, 0, 0, 0.9);
-
   }
 
 .timeline {
@@ -1545,7 +1523,6 @@ max-width: 1200px;
     align-items: center;
     position: relative;
     margin: 20px;
-    
 }
 
 .circle {
@@ -1711,7 +1688,6 @@ max-width: 1200px;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 2px 2px dark var(--Cloud_white);
-
 }
 
 .brug_din_stemme_content_block_text_top h5 {
@@ -1720,9 +1696,6 @@ max-width: 1200px;
     text-transform: uppercase;
     margin: 0 0 10px 0; 
     font-family: var(--Font_Oswald);
-    
-
-
 }
 
 .brug_din_stemme_content_block_text {
@@ -1778,7 +1751,6 @@ max-width: 1200px;
     margin: 20px auto;
     font-family: var(--Font_Oswald);
     box-shadow: 2px 2px 2px dark var(--Blue_grey);
-    
 }
 
 .underskriv_video_box video{
@@ -1789,9 +1761,6 @@ max-width: 1200px;
     margin: 40px auto;
     border-radius: 5px;
     height: auto;
- 
-    
- 
 }
 
 
@@ -1876,30 +1845,7 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Media Queries --------------------------------------------------------------------------------------------------------------------*/
 
 
 @media (width<1025px){
@@ -1909,23 +1855,13 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
  }
  .advice_catch_image{
-    order: -1;
-   
-    
-    
+    order: -1; 
  }
 
- 
- 
-
  .content li{
- 
     font-size: 24px;
-    
-
 }
 .content ul{
     padding-top: 10px;
@@ -1933,15 +1869,10 @@ footer{
 
 .content p{ 
     font-size: 14px;
-  
-
 }
 
-
 .share li{
-    
     font-size: 14px;
-   
 }
 
     
@@ -1961,13 +1892,10 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;  
         gap: 10px;
-    
       }
     
     .brug_din_stemme_content {
-        
         width: 100%;
-       
     }
      
     
@@ -1976,51 +1904,13 @@ footer{
     
     }
     .brug_din_stemme_content_image img {
-    
         width: 100%;
-    
     }
     .underskriv_video_box video {
         width: 100%;
     }
 
-    /* tag handling <1025px --------*/
-    .tag_handling_boxes {
-        width: 90%; /* så det ikke fylder hele skærmen */
-        padding-bottom: 150px; /* mellemrum mellem bund og footer */
-     }
-      
-    .tag_handling_boxes_1 {
-        width: 100%; /* så der kun er 1 box og fylder skærmen */
-        height: auto; 
-     }
-      
-    .txt-box {
-        padding: 30px; 
-        font-size: 16px; 
-    }
-      
-     .tag_handling_boxes_button button {
-         font-size: 12px; /* Medium font size for buttons */
-         padding: 10px 25px; /* Adjust button padding */
-     }
-      
-     .tag_handling_boxes_button a {
-      font-size: 12px; 
-     }
-
-     .text_box_1 { /* er iconet */
-        display: none; /*sletter iconerne */
-      }
-      
-     .text_box_2 {
-     font-size: 20px; 
-    }
-      
-     .text_box_3 {
-          font-size: 16px; 
-     }
-
+    
 }
 
 
@@ -2046,10 +1936,8 @@ footer{
         justify-content: center;
         /* align-items: start; */
         gap: 20px;
-       
         overflow: hidden;
         transition: width 0.4s ease-in-out;
-        
     }
 
    
@@ -2058,7 +1946,6 @@ footer{
     }
     .social_media{
         border: none;
-       
     }
     .menu_look .social_media i{
         color: var(--Cloud_white);
@@ -2068,24 +1955,19 @@ footer{
     .menu_look{
         flex-direction: column;
         align-items: center;
-        
     }
     .menu_look a{
         color: var(--Cloud_white);
     }
     
     
-  
     .mobile_look{
         order: 3;
         position: relative;
         display: flex;
         flex-direction: column;
         gap: 9px;
-                       
-      
         padding: 0 10px;
-
     }
     .mobile_look span{
         width: 30px;
@@ -2093,8 +1975,6 @@ footer{
         background-color: var(--Midnight_blue);
         transform-origin: left;
         transition: 0.5s ease;
-       
-
     }
 
     /* Trigger for navigation bar - checkbox */
@@ -2139,10 +2019,8 @@ footer{
       max-width: 100%;
       height: 100%;
       top: 130px;
-      
-      
-      
     }
+
     .front_page_hero_box{
         position: relative;
         top: -130px;
@@ -2153,16 +2031,8 @@ footer{
         width: 100%;
         height: 100%;
         margin-bottom: 130px;
-        
-
-
     }
    
-        
-        
-    
-  
-
     .counter{
         height: auto;
         width:100vw;
@@ -2170,19 +2040,16 @@ footer{
         max-width: 400px;
         display: flex;
         flex-direction: column;
-              
-        
-        
     }
+
     .scale_green_box{
         position: relative;
        align-self: self-start;
        rotate: -90deg;       
        max-width: 200px;
        right: 70px;
-        
-
     }
+
     .counter_sides{
        align-self: center;
        display: flex;
@@ -2243,9 +2110,6 @@ footer{
     align-items: center;
     transform-style: preserve-3d;
     flex-direction: column;
-    
-    
-    
 }
 .learn_more_swiper{
     position: relative;
@@ -2254,8 +2118,6 @@ footer{
     margin-bottom: 20px;
     perspective: 1000px;
     transform-style: preserve-3d;
-
-
 }
 .learn_more_swiper label{
     position: absolute;
@@ -2265,8 +2127,6 @@ footer{
     right: 0;
     margin: auto;
     transition: transform 0.5s ease;
-
-
 }
 
 .swiper input {
@@ -2282,13 +2142,7 @@ footer{
     width: 25px;
     height: 25px;
     stroke: var(--Blue_grey);
-    
-    
-    
 }
-
-
-
 
 
 #Box1:checked~.learn_more_swiper #slide3,
@@ -2372,12 +2226,8 @@ Responsive solution for images */
     min-height: 200px;  
  }
  
-
  .content li{
- 
     font-size: 24px;
-    
-
 }
 .content ul{
     padding-top: 10px;
@@ -2385,15 +2235,11 @@ Responsive solution for images */
 
 .content p{ 
     font-size: 12px;
-  
-
 }
 
 
 .share li{
-    
     font-size: 12px;
-   
 }
 
 
@@ -2563,7 +2409,6 @@ Responsive solution for images */
 
     
 
-
  /* Footer */
 
     .footer_left p{
@@ -2608,18 +2453,45 @@ Responsive solution for images */
         border-radius: 5px;
     }
 
+    .tag_handling_boxes {
+        width: 90%; /* så det ikke fylder hele skærmen */
+        padding-bottom: 150px; /* mellemrum mellem bund og footer */
+     }
+      
+    .tag_handling_boxes_1 {
+        width: 100%; /* så der kun er 1 box og fylder skærmen */
+        height: auto; 
+     }
+      
+    .txt-box {
+        padding: 30px; 
+        font-size: 16px; 
+    }
+      
+     .tag_handling_boxes_button button {
+         font-size: 12px; /* Medium font size for buttons */
+         padding: 10px 25px; /* Adjust button padding */
+     }
+      
+     .tag_handling_boxes_button a {
+      font-size: 12px; 
+     }
+
+     .text_box_1 { /* er iconet */
+        display: none; /*sletter iconerne */
+      }
+      
+     .text_box_2 {
+     font-size: 20px; 
+    }
+      
+     .text_box_3 {
+          font-size: 16px; 
+     }
+
     /* slut Tag handling */
-
-        
-    
-}
-      
-      
-
-/* end Tag handling ---*/ 
-
-    
-/* start underskriv side @media width<769px */
+         
+    /* start underskriv side @media width<769px */
     
     .hero-text-underskriv-glass-container {
         display: none;
@@ -2672,30 +2544,22 @@ Responsive solution for images */
         display: grid;
         grid-template-columns:1fr;  
         gap: 10px;
-    
       }
     
       .brug_din_stemme_content {
-        
         width: 100%;
-       
     }
      
-    
     .brug_din_stemme_content_block_box {
         width: 100%;
     
     }
     .brug_din_stemme_content_image img {
-    
         width: 100%;
-    
     }
     .trans_button_u {
        height: auto;
-       width: 300px;
-       
-        
+       width: 300px; 
     }
     .video-container-header h2{
         font-size: 20px;
@@ -2704,23 +2568,18 @@ Responsive solution for images */
     
     .underskriv_video_box {
         width: 100%;
-
-}
-
- 
+    }
 
 /* slut underskriv side @media width<769px */
+}
 
-
+    
 @media (width<415px){
       
     .main_button {
         font-size: 16px;
-        padding: 10px;
-             
-        
+        padding: 10px;   
     }
-    
 
     .video_text p{
         display: none;
@@ -2729,14 +2588,6 @@ Responsive solution for images */
         grid-row: 2 /span 3;
     }
     
-   
-   
-
-   
-   
-
-
-
 
 /*Tag handling @media <415px----*/
 
@@ -2762,12 +2613,10 @@ Responsive solution for images */
     width: 100%;
     height: auto;
     margin: 10px auto 20px auto;
-    
 }
 
 .hero-section-underskriv {
     place-content: center;
-    
 }
 .underskriv-overlay {
     display: none;
