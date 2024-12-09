@@ -1273,7 +1273,7 @@ max-width: 1200px;
     color: var(--Midnight_blue);
     text-transform: uppercase;
     font-weight: 600; /*makes it more bold */
-    padding: 5px ;
+    padding: 10px ;
     background-color: rgba(249, 249, 249, 0.675);
     border-radius: 5px;
    
@@ -1656,6 +1656,7 @@ max-width: 1200px;
     grid-template-rows: 1fr 1fr;    
     gap: 20px;
     margin: 40px auto 40px auto;
+    padding: 5px;
   }
 
 .brug_din_stemme_content_image img {
@@ -1699,25 +1700,31 @@ max-width: 1200px;
     font-size: 22px;
     font-weight: 700; 
     text-transform: uppercase;
-    margin: 0 0 10px 0; 
+    margin: 10px 0 10px 10px; 
+    padding: 10px;
     font-family: var(--Font_Oswald);
+
 }
 
-.brug_din_stemme_content_block_text {
+.brug_din_stemme_content_block_text_top p{
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex:1;
     color:var(--Midnight_blue);
+    font-family: var(--Fond_Q) serif;
+    font-size: 16px;
 }
 
 .brug_din_stemme_content_block_text_bottom {
     margin: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+
 }
 
 .trans_button_u {
