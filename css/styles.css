@@ -959,13 +959,13 @@ max-width: 1200px;
 
 .left_text_f {
     color: var(--Cloud_white);
-    font-family: "Quattrocento", serif;
+    font-family: var(--Fond_Q);
     font-size: 18px;
     line-height: 30px;   
 }
 
 .left_text_f p {
-    padding-bottom: 10px;
+    font-family: var(--Fond_Q);
 }
 
 .right_headline_f {
@@ -1113,7 +1113,7 @@ max-width: 1200px;
 }
 
 .insta_left_text p {
-    padding-bottom: 10px;
+    font-family: var(--Fond_Q);
 }
 
 .button_insta_f button {
@@ -1193,6 +1193,10 @@ max-width: 1200px;
     flex-direction: column;
     padding: 50px;
     border-radius: 5px;
+}
+
+.event_section_container_left li {
+    font-family: var(--Fond_Q);
 }
 
 .event_section_container_right {
@@ -1344,7 +1348,7 @@ max-width: 1200px;
   }
 
   .tag_handling_boxes_button:hover { /*hover effect*/
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   .text_box_1 { /* skal være iconet */
@@ -1364,6 +1368,7 @@ max-width: 1200px;
     text-transform: initial;
     color: var(--Cloud_white);
     font-weight: lighter;
+    font-family: var(--Fond_Q);
   }
 
 
