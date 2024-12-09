@@ -1464,7 +1464,7 @@ max-width: 1200px;
   }
   
 .sign-box:hover {
-    box-shadow:  0px 10px 70px rgba(0, 0, 0, 0.9);
+    box-shadow:  0px 10px 70px rgba(46, 46, 46, 0.9);
   }
 
 .timeline {
@@ -1651,7 +1651,7 @@ max-width: 1200px;
     transition: box-shadow 0.3s ease;
     border-radius: 5px;
 }
- 
+ /* 
 .brug_din_stemme_content_block_box {
     background-color: var(--Cloud_white);
     position: relative;
@@ -1660,9 +1660,11 @@ max-width: 1200px;
     flex-direction: column;
     box-shadow: 2px 2px 2px dark var(--Cloud_white);
 
-}
+}/*  */
 .brug_din_stemme_content_block_text {
     margin: 20px;
+
+    
 }
 
 .brug_din_stemme_content_block_text_top h5 {
@@ -1686,23 +1688,34 @@ max-width: 1200px;
     font-family: var(--Fond_Q), serif;
     font-size: 16px;
 }
-
-.brug_din_stemme_content_block_text_bottom {
-    margin: 10px;
-    
+.brug_din_stemme_content_block_bottom_area_right {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-self: end;
+    border-radius: 5px;
+        
+}
+/* 
+.brug_din_stemme_content_block_text_bottom button{
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-
-}
+    
+    
+    
+}/*  */
 
 .trans_button_u {
     background-color: var(--Cloud_white);
     border: solid 1px var(--Blue_grey);
     box-shadow: 10px 10px 10px var(--Blue_grey); 
     margin: 20px;
-    
+    width: 50%;
+
+      
 }
 
 .trans_button_u a{
@@ -1744,6 +1757,10 @@ max-width: 1200px;
     align-items: center;
     color: var(--Cloud_white);
 }
+.underskriv_video_box {
+    position: relative;
+    overflow: hidden;
+}
 
 .underskriv_video_box video{
     display: flex;
@@ -1753,6 +1770,31 @@ max-width: 1200px;
     margin: 40px auto;
     border-radius: 5px;
     height: auto;
+    object-fit: cover; 
+   
+}
+
+.overlay-text-u {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    text-align: center;
+    color: var(--Cloud_white);
+    z-index: 1;
+}
+
+.overlay-text-u h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgb(2, 2, 2);
+    font-size: 72px;
+    font-family: var(--Font_Oswald);
+}
+
+.overlay-text-u p {
+    font-size: 1.5em;
+    font-family: var(--Fond_Q);
 }
 
 
