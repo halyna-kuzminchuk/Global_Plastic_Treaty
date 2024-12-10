@@ -1651,16 +1651,7 @@ max-width: 1200px;
     transition: box-shadow 0.3s ease;
     border-radius: 5px;
 }
- /* 
-.brug_din_stemme_content_block_box {
-    background-color: var(--Cloud_white);
-    position: relative;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 2px dark var(--Cloud_white);
 
-}/*  */
 .brug_din_stemme_content_block_text {
     margin: 20px;
 
@@ -1696,17 +1687,7 @@ max-width: 1200px;
     border-radius: 5px;
         
 }
-/* 
-.brug_din_stemme_content_block_text_bottom button{
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    
-    
-    
-}/*  */
+
 
 .trans_button_u {
     background-color: var(--Cloud_white);
@@ -1714,8 +1695,6 @@ max-width: 1200px;
     box-shadow: 10px 10px 10px var(--Blue_grey); 
     margin: 20px;
     width: 50%;
-
-      
 }
 
 .trans_button_u a{
@@ -1780,21 +1759,27 @@ max-width: 1200px;
     left: 50%;
     transform: translate(-50%, -50%); /* Centers the text */
     text-align: center;
-    color: var(--Cloud_white);
     z-index: 1;
+   
 }
+
 
 .overlay-text-u h1 {
-    font-size: 3em;
     margin-bottom: 10px;
-    color: rgb(2, 2, 2);
+    color: var(--Cloud_white);
     font-size: 72px;
     font-family: var(--Font_Oswald);
+    text-transform: uppercase;
+    
+
 }
 
+
 .overlay-text-u p {
-    font-size: 1.5em;
+    font-size: 20px;
     font-family: var(--Fond_Q);
+    color: var(--Cloud_white);
+
 }
 
 
@@ -1882,7 +1867,7 @@ footer{
 /* Media Queries --------------------------------------------------------------------------------------------------------------------*/
 
 
-@media (width<1025px){
+@media (width<1025px) {
 
     /* Front page */
  .news,.advice{
@@ -1926,7 +1911,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;  
         gap: 10px;
-      }
+    }
     
     .brug_din_stemme_content {
         width: 100%;
@@ -1942,11 +1927,18 @@ footer{
     }
     .underskriv_video_box video {
         width: 100%;
-    }
-
+          
     
-}
-
+    }
+    .overlay-text-u h1 {
+        font-size: 34px;
+        
+    }
+    
+    .overlay-text-u p {
+        font-size: 12px;
+    }
+ }
 
 @media (width<769px){  
 
@@ -2118,7 +2110,8 @@ footer{
 
     .hider{
         margin: 0;
-        display: none;}
+        display: none;
+    }
 
 .swiper_container{
     margin-top:50px ;
@@ -2164,7 +2157,8 @@ footer{
 }
 
 .swiper input {
-      appearance: none;}
+      appearance: none;
+}
 
 
 .box svg{
@@ -2357,11 +2351,12 @@ Responsive solution for images */
         width: var(--width-full);
         display: grid;
     }
+}
 
-    @media (width<535px) {
+@media (width<535px) {
     .instagram_section_headline_box {
         height: 100px;
-    }  
+      
     }
    
     .instagram_section_headline_text {
@@ -2588,9 +2583,9 @@ Responsive solution for images */
         display: grid;
         grid-template-columns:1fr;  
         gap: 10px;
-      }
+    }
     
-      .brug_din_stemme_content {
+    .brug_din_stemme_content {
         width: 100%;
     }
      
@@ -2613,12 +2608,20 @@ Responsive solution for images */
     .underskriv_video_box {
         width: 100%;
     }
+    .overlay-text-u h1 {
+        font-size: 24px;
+        
+    }
+    
+    .overlay-text-u p {
+      display: none;
+    }
 
-/* slut underskriv side @media width<769px */
+        /* slut underskriv side @media width<769px */
 }
 
-    
-@media (width<415px){
+
+@media (width<415px) {
       
     .main_button {
         font-size: 16px;
@@ -2633,83 +2636,89 @@ Responsive solution for images */
     }
     
 
-/*Tag handling @media <415px----*/
+    /*Tag handling @media <415px----*/
 
-.filler_block_content_handling_hero_img {
-    background-image: url("/img/Tag\ handling\ hero\ img.jpg");
-    width: 100%;
-    height: 265px;
-}
+    .filler_block_content_handling_hero_img {
+        background-image: url("/img/Tag\ handling\ hero\ img.jpg");
+        width: 100%;
+        height: 265px;
+    }
 
-.filler_block_content_handling_hero_img p {
-    font-size: 32px;
-    padding: 5px ;
-    background-color: rgba(249, 249, 249, 0.675);
-    border-radius: 5px;
-}
+    .filler_block_content_handling_hero_img p {
+        font-size: 32px;
+        padding: 5px ;
+        background-color: rgba(249, 249, 249, 0.675);
+        border-radius: 5px;
+    }
 
-/* end Tag handling ---*/ 
+    /* end Tag handling ---*/ 
 
 
 
-/* start underskriv side @media width<415px */
-.hero-container-underskriv-img {
-    width: 100%;
-    height: auto;
-    margin: 10px auto 20px auto;
-}
+    /* start underskriv side @media width<415px */
+        .hero-container-underskriv-img {
+            width: 100%;
+            height: auto;
+            margin: 10px auto 20px auto;
+        }
 
-.hero-section-underskriv {
-    place-content: center;
-}
-.underskriv-overlay {
-    display: none;
-}
-.sign-box {
-    width: 45%;
-    grid-column: 1/ span 5;
-    grid-row: 1;
-    margin: 50px;
-}
-.sign-box-h2 {
-    font-size: 16px;
-    margin: auto;
-}
-.sign-box-h3 {
-    font-size: 12px;
-    margin: auto;
-}
-.signature-area {
-    width: 50%;
-    margin-top: 15px;
-    margin-left: 15px;
+        .hero-section-underskriv {
+            place-content: center;
+        }
+        
+        .sign-box {
+            width: 45%;
+            grid-column: 1/ span 5;
+            grid-row: 1;
+            margin: 50px;
+        }
+        .sign-box-h2 {
+            font-size: 16px;
+            margin: auto;
+        }
+        .sign-box-h3 {
+            font-size: 12px;
+            margin: auto;
+        }
+        .signature-area {
+            width: 50%;
+            margin-top: 15px;
+            margin-left: 15px;
 
-}
-.signature-form {
-    width: 50%;
+        }
+        .signature-form {
+            width: 50%;
 
-}
-.signature-area input {
-    width: fit-content;
-    margin: auto;
+        }
+        .signature-area input {
+            width: fit-content;
+            margin: auto;
 
-}
-.buttons_underskriv button{
-    width: 80%;
-    font-size: 14px;
-}
-.privatlivs-text {
-    font-size: 8px;
-    margin: 5px;
-}
-.brug-din-stemme-header h2 {
-    font-size: 16px;
-}
-.trans_button_u {
-    height: auto;
-    width: 200px;
- 
+        }
+        .buttons_underskriv button{
+            width: 80%;
+            font-size: 14px;
+        }
+        .privatlivs-text {
+            font-size: 8px;
+            margin: 5px;
+        }
+        .brug-din-stemme-header h2 {
+            font-size: 16px;
+        }
+        .trans_button_u {
+            height: auto;
+            width: 200px;
+        
+        }
+        .overlay-text-u h1 {
+            font-size: 18px;
+            
+        }
+
+        .overlay-text-u p {
+            display: none;
+        }
+
+        /* slut underskriv side @media width<415px */
  }
-
-/* slut underskriv side @media width<415px */
-}
