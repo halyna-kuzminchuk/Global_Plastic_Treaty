@@ -1016,12 +1016,14 @@ max-width: 1200px;
     text-transform: uppercase;
     background-color: var(--Light_mint_green);
     margin-left: 1.5px;
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset;
 }
 
 .button_f button:hover {
     background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset; 
 }
 
 /* Instagram Section */
@@ -1128,12 +1130,14 @@ max-width: 1200px;
     text-transform: uppercase;
     background-color: var(--Light_mint_green);
     margin-left: 1.5px;
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset;
 }
 
 .button_insta_f button:hover {
     background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset;
 }
 
 /* Event Section */
@@ -1239,12 +1243,14 @@ max-width: 1200px;
     text-transform: uppercase;
     background-color: var(--Light_mint_green);
     margin-left: 1.5px;
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset;
 }
 
 .button_event_f button:hover {
     background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset;
 }
 
 
@@ -1286,6 +1292,34 @@ max-width: 1200px;
     margin: 0 auto 0 auto;
     height: 3200px;
     background-color:var(--Cloud_white) ;
+}
+
+.tag_handling_section_headline_box { /* headline under hero */
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.tag_handling_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.tag_handling_section_headline_text h2 {
+    font-size: 24px;
 }
 
 /*Start på de 6 kasser/ hjælp fra Recipe code */
@@ -1464,7 +1498,7 @@ max-width: 1200px;
   }
   
 .sign-box:hover {
-    box-shadow:  0px 10px 70px rgba(0, 0, 0, 0.9);
+    box-shadow:  0px 10px 70px rgba(46, 46, 46, 0.9);
   }
 
 .timeline {
@@ -1651,18 +1685,11 @@ max-width: 1200px;
     transition: box-shadow 0.3s ease;
     border-radius: 5px;
 }
- 
-.brug_din_stemme_content_block_box {
-    background-color: var(--Cloud_white);
-    position: relative;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 2px 2px 2px dark var(--Cloud_white);
 
-}
 .brug_din_stemme_content_block_text {
     margin: 20px;
+
+    
 }
 
 .brug_din_stemme_content_block_text_top h5 {
@@ -1686,23 +1713,22 @@ max-width: 1200px;
     font-family: var(--Fond_Q), serif;
     font-size: 16px;
 }
-
-.brug_din_stemme_content_block_text_bottom {
-    margin: 10px;
-    
+.brug_din_stemme_content_block_bottom_area_right {
+    margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: end;
     border-radius: 5px;
-
+        
 }
+
 
 .trans_button_u {
     background-color: var(--Cloud_white);
     border: solid 1px var(--Blue_grey);
     box-shadow: 10px 10px 10px var(--Blue_grey); 
     margin: 20px;
-    
+    width: 50%;
 }
 
 .trans_button_u a{
@@ -1744,6 +1770,10 @@ max-width: 1200px;
     align-items: center;
     color: var(--Cloud_white);
 }
+.underskriv_video_box {
+    position: relative;
+    overflow: hidden;
+}
 
 .underskriv_video_box video{
     display: flex;
@@ -1753,6 +1783,37 @@ max-width: 1200px;
     margin: 40px auto;
     border-radius: 5px;
     height: auto;
+    object-fit: cover; 
+   
+}
+
+.overlay-text-u {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    text-align: center;
+    z-index: 1;
+   
+}
+
+
+.overlay-text-u h1 {
+    margin-bottom: 10px;
+    color: var(--Cloud_white);
+    font-size: 72px;
+    font-family: var(--Font_Oswald);
+    text-transform: uppercase;
+    
+
+}
+
+
+.overlay-text-u p {
+    font-size: 20px;
+    font-family: var(--Fond_Q);
+    color: var(--Cloud_white);
+
 }
 
 
@@ -1840,7 +1901,7 @@ footer{
 /* Media Queries --------------------------------------------------------------------------------------------------------------------*/
 
 
-@media (width<1025px){
+@media (width<1025px) {
 
     /* Front page */
  .news,.advice{
@@ -1884,7 +1945,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;  
         gap: 10px;
-      }
+    }
     
     .brug_din_stemme_content {
         width: 100%;
@@ -1900,11 +1961,18 @@ footer{
     }
     .underskriv_video_box video {
         width: 100%;
-    }
-
+          
     
-}
-
+    }
+    .overlay-text-u h1 {
+        font-size: 34px;
+        
+    }
+    
+    .overlay-text-u p {
+        font-size: 12px;
+    }
+ }
 
 @media (width<769px){  
 
@@ -2076,7 +2144,8 @@ footer{
 
     .hider{
         margin: 0;
-        display: none;}
+        display: none;
+    }
 
 .swiper_container{
     margin-top:50px ;
@@ -2122,7 +2191,8 @@ footer{
 }
 
 .swiper input {
-      appearance: none;}
+      appearance: none;
+}
 
 
 .box svg{
@@ -2315,11 +2385,12 @@ Responsive solution for images */
         width: var(--width-full);
         display: grid;
     }
+}
 
-    @media (width<535px) {
+@media (width<535px) {
     .instagram_section_headline_box {
         height: 100px;
-    }  
+      
     }
    
     .instagram_section_headline_text {
@@ -2453,6 +2524,7 @@ Responsive solution for images */
     .tag_handling_boxes_1 {
         width: 100%; /* så der kun er 1 box og fylder skærmen */
         height: auto; 
+        margin-top: 10px;
      }
       
     .txt-box {
@@ -2488,6 +2560,35 @@ Responsive solution for images */
     .tag_handling_boxes_1:nth-child(4) {
         order: 3; 
     }
+
+    .tag_handling_section_headline_box { /* headline box under hero */
+        width: 100%;
+        background-color: var(--Midnight_blue);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 160px;
+    }
+    
+    .tag_handling_section_headline_text {
+        display: grid;
+        grid-template-columns: repeat(12, 1 fr);
+        grid-template-rows: auto;
+        height: 100%;
+        width: 100%; /*så det scaler ned*/
+        margin: 0 auto 0 15px;
+        color: var(--Cloud_white);
+        font-family: var(--Font_Oswald);
+        font-size: 28px;
+        text-transform: uppercase;
+        align-items: center;
+        color: var(--Cloud_white);
+    }
+    
+    .tag_handling_section_headline_text h2 {
+        font-size: 24px;
+    }
+
 
     /* slut Tag handling */
          
@@ -2544,9 +2645,9 @@ Responsive solution for images */
         display: grid;
         grid-template-columns:1fr;  
         gap: 10px;
-      }
+    }
     
-      .brug_din_stemme_content {
+    .brug_din_stemme_content {
         width: 100%;
     }
      
@@ -2569,12 +2670,20 @@ Responsive solution for images */
     .underskriv_video_box {
         width: 100%;
     }
+    .overlay-text-u h1 {
+        font-size: 24px;
+        
+    }
+    
+    .overlay-text-u p {
+      display: none;
+    }
 
-/* slut underskriv side @media width<769px */
+        /* slut underskriv side @media width<769px */
 }
 
-    
-@media (width<415px){
+
+@media (width<415px) {
       
     .main_button {
         font-size: 16px;
@@ -2589,83 +2698,89 @@ Responsive solution for images */
     }
     
 
-/*Tag handling @media <415px----*/
+    /*Tag handling @media <415px----*/
 
-.filler_block_content_handling_hero_img {
-    background-image: url("/img/Tag\ handling\ hero\ img.jpg");
-    width: 100%;
-    height: 265px;
-}
+    .filler_block_content_handling_hero_img {
+        background-image: url("/img/Tag\ handling\ hero\ img.jpg");
+        width: 100%;
+        height: 265px;
+    }
 
-.filler_block_content_handling_hero_img p {
-    font-size: 32px;
-    padding: 5px ;
-    background-color: rgba(249, 249, 249, 0.675);
-    border-radius: 5px;
-}
+    .filler_block_content_handling_hero_img p {
+        font-size: 32px;
+        padding: 5px ;
+        background-color: rgba(249, 249, 249, 0.675);
+        border-radius: 5px;
+    }
 
-/* end Tag handling ---*/ 
+    /* end Tag handling ---*/ 
 
 
 
-/* start underskriv side @media width<415px */
-.hero-container-underskriv-img {
-    width: 100%;
-    height: auto;
-    margin: 10px auto 20px auto;
-}
+    /* start underskriv side @media width<415px */
+        .hero-container-underskriv-img {
+            width: 100%;
+            height: auto;
+            margin: 10px auto 20px auto;
+        }
 
-.hero-section-underskriv {
-    place-content: center;
-}
-.underskriv-overlay {
-    display: none;
-}
-.sign-box {
-    width: 45%;
-    grid-column: 1/ span 5;
-    grid-row: 1;
-    margin: 50px;
-}
-.sign-box-h2 {
-    font-size: 16px;
-    margin: auto;
-}
-.sign-box-h3 {
-    font-size: 12px;
-    margin: auto;
-}
-.signature-area {
-    width: 50%;
-    margin-top: 15px;
-    margin-left: 15px;
+        .hero-section-underskriv {
+            place-content: center;
+        }
+        
+        .sign-box {
+            width: 45%;
+            grid-column: 1/ span 5;
+            grid-row: 1;
+            margin: 50px;
+        }
+        .sign-box-h2 {
+            font-size: 16px;
+            margin: auto;
+        }
+        .sign-box-h3 {
+            font-size: 12px;
+            margin: auto;
+        }
+        .signature-area {
+            width: 50%;
+            margin-top: 15px;
+            margin-left: 15px;
 
-}
-.signature-form {
-    width: 50%;
+        }
+        .signature-form {
+            width: 50%;
 
-}
-.signature-area input {
-    width: fit-content;
-    margin: auto;
+        }
+        .signature-area input {
+            width: fit-content;
+            margin: auto;
 
-}
-.buttons_underskriv button{
-    width: 80%;
-    font-size: 14px;
-}
-.privatlivs-text {
-    font-size: 8px;
-    margin: 5px;
-}
-.brug-din-stemme-header h2 {
-    font-size: 16px;
-}
-.trans_button_u {
-    height: auto;
-    width: 200px;
- 
+        }
+        .buttons_underskriv button{
+            width: 80%;
+            font-size: 14px;
+        }
+        .privatlivs-text {
+            font-size: 8px;
+            margin: 5px;
+        }
+        .brug-din-stemme-header h2 {
+            font-size: 16px;
+        }
+        .trans_button_u {
+            height: auto;
+            width: 200px;
+        
+        }
+        .overlay-text-u h1 {
+            font-size: 18px;
+            
+        }
+
+        .overlay-text-u p {
+            display: none;
+        }
+
+        /* slut underskriv side @media width<415px */
  }
-
-/* slut underskriv side @media width<415px */
-}
