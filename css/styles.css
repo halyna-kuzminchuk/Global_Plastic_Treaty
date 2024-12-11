@@ -237,7 +237,7 @@ header{
     width:var(--width-full);
     max-width: 100vw;
     height: 720px;
-    background-image: url(/img/Turtle_hero_image.jpg);
+    background-image: url(https://halyna-kuzminchuk.github.io/Global_Plastic_Treaty/img/Turtle_hero_image.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -534,7 +534,7 @@ max-width: 1200px;
     position: absolute;
     
     
-    background-image: url(/img/240_F_210788011_vmpH314JPjKkgmkGlgpZ8y0Ipgijwxnh.jpg);
+    background-image: url(./img/240_F_210788011_vmpH314JPjKkgmkGlgpZ8y0Ipgijwxnh.jpg);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -716,7 +716,7 @@ max-width: 1200px;
 }
 
 .news_catch_image{ 
-    background-image: url(/img/Negotiations.jpg);
+    background-image: url(./img/Negotiations.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -763,7 +763,7 @@ max-width: 1200px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 5px;
-    background-image: url(/img/glasses.jpg);
+    background-image: url(./img/glasses.jpg);
     flex-grow: 1;
         
 }
@@ -851,7 +851,7 @@ max-width: 1200px;
 
 .hero_f {
     width: var(--width-full);
-    background-image: url(/img/Vi\ staar\ sammen.jpg);
+    background-image: url(/img/Vi\ staar\ sammen.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1089,7 +1089,7 @@ max-width: 1200px;
 .instagram_section_container_right {
     grid-column: 8 / span 5;
     height: 800px;
-    background-image: url(/img/Instagram\ opslag.jpg);
+    background-image: url(/img/Instagram\ opslag.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1206,7 +1206,7 @@ max-width: 1200px;
 .event_section_container_right {
     grid-column: 6 / span 7;
     height: 600px;
-    background-image: url(/img/samle\ skrald\ event.jpg);
+    background-image: url(/img/samle\ skrald\ event.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2396,7 +2396,8 @@ Responsive solution for images */
         height: 100px;
       
     }
-   
+    
+}
     .instagram_section_headline_text {
         width: var(--width-full);
         grid-column: 1 / span 3;
@@ -2506,6 +2507,7 @@ Responsive solution for images */
     }
 
 
+    @media (width<769px) { 
     /*Tag handling @media <769px---------*/
     .filler_block_content_handling_hero_img {
         background-image: url("/img/Tag\ handling\ hero\ mobile\ img\ .jpg");
@@ -2595,9 +2597,10 @@ Responsive solution for images */
 
 
     /* slut Tag handling */
-         
+}
 
- }
+
+ 
  @media (width <769px) {
     .hero-text-underskriv-glass-container {
         display: none;
