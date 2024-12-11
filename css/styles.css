@@ -1288,6 +1288,34 @@ max-width: 1200px;
     background-color:var(--Cloud_white) ;
 }
 
+.tag_handling_section_headline_box { /* headline under hero */
+    width: var(--width-full);
+    background-color: var(--Midnight_blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+.tag_handling_section_headline_text {
+    display: grid;
+    grid-template-columns: repeat(12, 1 fr);
+    grid-template-rows: auto;
+    height: 100%;
+    width: var(--width-12col);
+    margin: 0 auto 0 auto;
+    color: var(--Cloud_white);
+    font-family: var(--Font_Oswald);
+    font-size: 28px;
+    text-transform: uppercase;
+    align-items: center;
+    color: var(--Cloud_white);
+}
+
+.tag_handling_section_headline_text h2 {
+    font-size: 24px;
+}
+
 /*Start på de 6 kasser/ hjælp fra Recipe code */
 
 .tag_handling_boxes {
@@ -2525,6 +2553,34 @@ Responsive solution for images */
     
     .tag_handling_boxes_1:nth-child(4) {
         order: 3; 
+    }
+
+    .tag_handling_section_headline_box { /* headline box under hero */
+        width: 100%;
+        background-color: var(--Midnight_blue);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 160px;
+    }
+    
+    .tag_handling_section_headline_text {
+        display: grid;
+        grid-template-columns: repeat(12, 1 fr);
+        grid-template-rows: auto;
+        height: 100%;
+        width: 100%; /*så det scaler ned*/
+        margin: 0 auto 0 15px;
+        color: var(--Cloud_white);
+        font-family: var(--Font_Oswald);
+        font-size: 28px;
+        text-transform: uppercase;
+        align-items: center;
+        color: var(--Cloud_white);
+    }
+    
+    .tag_handling_section_headline_text h2 {
+        font-size: 24px;
     }
 
 
