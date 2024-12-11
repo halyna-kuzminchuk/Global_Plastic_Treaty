@@ -2311,6 +2311,8 @@ Responsive solution for images */
 
     /* hero and mail section */
 
+    @media (width<769px) {
+    
     .main_container {
         overflow: hidden;
     }
@@ -2391,12 +2393,6 @@ Responsive solution for images */
     }
 }
 
-@media (width<535px) {
-    .instagram_section_headline_box {
-        height: 100px;
-    }
-    
-}
     .instagram_section_headline_text {
         width: var(--width-full);
         grid-column: 1 / span 3;
@@ -2471,11 +2467,21 @@ Responsive solution for images */
         height: 50px;
         font-size: 20px;
     }
+    }
 
+    @media (width<535px) {
+        .instagram_section_headline_box {
+            height: 100px;
+        }
+        
+    }
     /* Faallesskabsside done ----------------------------*/ 
 
     
 
+    @media (width<769px) {
+
+    
  /* Footer */
 
     .footer_left p{
@@ -2504,6 +2510,8 @@ Responsive solution for images */
     .footer_right>li:last-child{
         order: -1;
     }
+
+}
 
 
     @media (width<769px) { 
