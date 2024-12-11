@@ -1016,12 +1016,14 @@ max-width: 1200px;
     text-transform: uppercase;
     background-color: var(--Light_mint_green);
     margin-left: 1.5px;
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset;
 }
 
 .button_f button:hover {
     background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset; 
 }
 
 /* Instagram Section */
@@ -1128,12 +1130,14 @@ max-width: 1200px;
     text-transform: uppercase;
     background-color: var(--Light_mint_green);
     margin-left: 1.5px;
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset;
 }
 
 .button_insta_f button:hover {
     background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset;
 }
 
 /* Event Section */
@@ -1239,12 +1243,14 @@ max-width: 1200px;
     text-transform: uppercase;
     background-color: var(--Light_mint_green);
     margin-left: 1.5px;
+    box-shadow: 10px 10px 10px #A8C29C inset, -10px -10px 10px #E5F2DA inset;
 }
 
 .button_event_f button:hover {
     background-color: var(--Soft-orange);
     color: var(--Midnight_blue);
     scale: 100%;
+    box-shadow: 10px 10px 10px #D9824F inset, -10px -10px 10px #F9C59A inset;
 }
 
 
