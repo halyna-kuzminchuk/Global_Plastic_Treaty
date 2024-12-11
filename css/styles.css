@@ -2311,6 +2311,10 @@ Responsive solution for images */
 
     /* hero and mail section */
 
+    .main_container {
+        overflow: hidden;
+    }
+
     .hero_f {
         width: var(--width-full);
     }
@@ -2504,7 +2508,7 @@ Responsive solution for images */
 
     /*Tag handling @media <769px---------*/
     .filler_block_content_handling_hero_img {
-        background-image: url("/img/Tag\ handling\ hero\ img.jpg");
+        background-image: url("/img/Tag\ handling\ hero\ mobile\ img\ .jpg");
         width: 100%;
         height: 350px;
     }
@@ -2576,7 +2580,7 @@ Responsive solution for images */
         grid-template-rows: auto;
         height: 100%;
         width: 100%; /*så det scaler ned*/
-        margin: 0 auto 0 15px;
+        margin: 0 5px 0 15px;
         color: var(--Cloud_white);
         font-family: var(--Font_Oswald);
         font-size: 28px;
@@ -2701,7 +2705,7 @@ Responsive solution for images */
     /*Tag handling @media <415px----*/
 
     .filler_block_content_handling_hero_img {
-        background-image: url("/img/Tag\ handling\ hero\ img.jpg");
+        background-image: url("/img/Tag\ handling\ hero\ mobile\ img\ .jpg");
         width: 100%;
         height: 265px;
     }
