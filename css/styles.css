@@ -2283,6 +2283,10 @@ Responsive solution for images */
 
     /* hero and mail section */
 
+    .main_container {
+        overflow: hidden;
+    }
+
     .hero_f {
         width: var(--width-full);
     }
