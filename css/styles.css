@@ -2389,12 +2389,14 @@ Responsive solution for images */
         width: var(--width-full);
         display: grid;
     }
+    
 }
 
 @media (width<535px) {
     .instagram_section_headline_box {
         height: 100px;
       
+    }
     }
    
     .instagram_section_headline_text {
@@ -2596,96 +2598,7 @@ Responsive solution for images */
 
     /* slut Tag handling */
          
-    /* start underskriv side @media width<769px */
-    
-    .hero-text-underskriv-glass-container {
-        display: none;
-    }
-    .sign-box {
-        width: 50%;
-    
-    }
-    .sign-box-h2 {
-        font-size: 20px;
-        margin: auto;
-    }
-    .sign-box-h3 {
-        font-size: 16px;
-        margin: auto;
-    }
-    .signature-area {
-        width: 50%;
-        margin-top: 15px;
-        margin-left: 30px;
-    
-    }
-    .signature-form {
-        width: 50%;
-    
-    }
-    .signature-area input {
-        width: fit-content;
-        margin: auto;
-    
-    }
-    .privatlivs-text {
-        font-size: 10px;
-        margin: 5px;
-    }
-    .sign-box-h2 {
-        font-size: 24px;
-    }
-
-    .sign-box-h3 {
-        font-size: small;
-    }
-
-    .brug-din-stemme-header h2 {
-        font-size: 20px;
-    }
-
-    .brug-din-stemme {
-        width: 100%;
-        display: grid;
-        grid-template-columns:1fr;  
-        gap: 10px;
-    }
-    
-    .brug_din_stemme_content {
-        width: 100%;
-    }
-     
-    .brug_din_stemme_content_block_box {
-        width: 100%;
-    
-    }
-    .brug_din_stemme_content_image img {
-        width: 100%;
-    }
-    .trans_button_u {
-       height: auto;
-       width: 300px; 
-    }
-    .video-container-header h2{
-        font-size: 20px;
-        width: 100%;
-    }
-    
-    .underskriv_video_box {
-        width: 100%;
-    }
-    .overlay-text-u h1 {
-        font-size: 24px;
-        
-    }
-    
-    .overlay-text-u p {
-      display: none;
-    }
-
-        /* slut underskriv side @media width<769px */
-}
-
+   
 
 @media (width<415px) {
       
@@ -2771,6 +2684,7 @@ Responsive solution for images */
         }
         .brug-din-stemme-header h2 {
             font-size: 16px;
+            width: 100%;
         }
         .trans_button_u {
             height: auto;
