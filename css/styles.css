@@ -2397,8 +2397,8 @@ Responsive solution for images */
         height: 100px;
       
     }
-    }
-   
+    
+}
     .instagram_section_headline_text {
         width: var(--width-full);
         grid-column: 1 / span 3;
@@ -2508,6 +2508,7 @@ Responsive solution for images */
     }
 
 
+    @media (width<769px) { 
     /*Tag handling @media <535px---------*/
     .filler_block_content_handling_hero_img {
         background-image: url("/img/Tag\ handling\ hero\ mobile\ img\ .jpg");
@@ -2597,8 +2598,8 @@ Responsive solution for images */
 
 
     /* slut Tag handling */
-         
-   
+}
+
 
 @media (width<415px) {
       
