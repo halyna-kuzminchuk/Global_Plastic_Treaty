@@ -2090,12 +2090,9 @@ footer{
         gap: var(--grid-gap);
         width: 100%;
         height: 100%;
-        margin-bottom: 130px;
+        margin-bottom: 180px;
     }
-    .counter_container{
-        margin-top: 50px;
-
-    }
+   
    
     .counter{
         /* margin-top: 50px; */
@@ -2200,15 +2197,15 @@ footer{
 }
 
 
-.box svg{
+.learn_more_swiper .box span{
     position: absolute;
     z-index: 5;
     right:10px;
     top:10px;    
-    fill: var(--Blue_grey);
-    width: 25px;
+    color: var(--Blue_grey);
+    /* width: 25px;
     height: 25px;
-    stroke: var(--Blue_grey);
+    stroke: var(--Blue_grey); */
 }
 
 
