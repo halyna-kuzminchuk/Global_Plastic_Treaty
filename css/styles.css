@@ -1412,7 +1412,7 @@ max-width: 1200px;
 
 
 .hero-container-underskriv-img {
-    background-image: url(/img/heroimageunderskriv1.jpg);
+    background-image: url("../img/heroimageunderskriv1.jpg");
     grid-column: 8 span 5;
     height: 720px;;
     background-repeat: no-repeat;
