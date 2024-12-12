@@ -2517,7 +2517,7 @@ Responsive solution for images */
     @media (width<769px) { 
     /*Tag handling @media <769px---------*/
     .filler_block_content_handling_hero_img {
-        background-image: url("/img/Tag\ handling\ hero\ mobile\ img\ .jpg");
+        background-image: url("../img/Tag\ handling\ hero\ mobile\ img\ .jpg");
         width: 100%;
         height: 350px;
     }
@@ -2717,7 +2717,7 @@ Responsive solution for images */
     /*Tag handling @media <415px----*/
 
     .filler_block_content_handling_hero_img {
-        background-image: url("/img/Tag\ handling\ hero\ mobile\ img\ .jpg");
+        background-image: url("../img/Tag\ handling\ hero\ mobile\ img\ .jpg");
         width: 100%;
         height: 265px;
     }
